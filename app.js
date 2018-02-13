@@ -11,6 +11,13 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
+//connecting calender picker
+var calpick = require('./routes/calpick')
+var pickplace = require('./routes/pickplace')
+var schedule = require('./routes/schedule')
+var choosecountry = require('./routes/choosecountry')
+var login = require('./routes/login')
+
 
 var app = express();
 
@@ -37,6 +44,13 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
+app.get('/calpick', calpick.view)
+app.get('/pickplace', pickplace.view)
+app.get('/schedule',schedule.view)
+app.get('/choosecountry', choosecountry.view)
+app.get('/login', login.view)
+
+app.post('/index', index.view)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
