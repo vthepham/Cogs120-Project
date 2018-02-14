@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The place you chosen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="tourpagestyle.css">
+</head>
+<body>
+{{#each activities}}
+      	<div class="activities" id="{{name}}">
+        	<a href="description" class="thumbnail">
+          		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
+          		<p>{{name}}</p>
+        	</a>
+      	</div>
+      	<div class="hours">
+			<select id = "hours" name="">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value='5'>5</option>
+				<option value='6'>6</option>
+				<option value='7'>7</option>
+				<option value='8'>8</option>
+				<option value='9'>9</option>
+				<option value='10'>10</option>
+				<option value='11'>11</option>
+				<option value='12'>12</option>
+			</select>
+		</div>
+{{/each}}
+
+{{#each food}}
+	<div class = "store name" id="{{store}}">
+			<p>{{store}}</p>
+			<p>{{known}}</p>
+			<hr>
+			<hr>
+			<hr>
+			<p>{{price}}</p>
+	</div>
+{{/each}}
+</body>
+</html>
+
+<!-- This shit loads stuff from json...follow this template
+		#each = for loop
+		activities = calling the section
+		 = callling a particular thing in a json
+		 {{#each activities}}
+      	<div class="activities" id="{{name}}">
+        	<a href="description" class="thumbnail">
+          		<img src="{{imageURL}}" class = "img-responsive">
+          		<p>{{name}}</p>
+        	</a>
+      	</div>
+    {{/each}}
+-->

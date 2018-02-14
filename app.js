@@ -15,8 +15,9 @@ var index = require('./routes/index');
 var calpick = require('./routes/calpick')
 var pickplace = require('./routes/pickplace')
 var schedule = require('./routes/schedule')
-var choosecountry = require('./routes/choosecountry')
+var chooseplace = require('./routes/chooseplace')
 var login = require('./routes/login')
+var tokyoplace = require('./routes/tokyoplace')
 
 
 var app = express();
@@ -47,8 +48,9 @@ app.get('/', index.view);
 app.get('/calpick', calpick.view)
 app.get('/pickplace', pickplace.view)
 app.get('/schedule',schedule.view)
-app.get('/choosecountry', choosecountry.view)
+app.get('/chooseplace', chooseplace.view)
 app.get('/login', login.view)
+app.get('/tokyoplace', tokyoplace.view)
 
 app.post('/index', index.view)
 

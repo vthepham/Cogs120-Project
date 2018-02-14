@@ -1,7 +1,7 @@
 {
-	"place": [
+	"japanactivities": [
 		{
-			"name": "Macdonlds",
+			"name": "Doug Engelbart",
 			"description": "Has awesome pet mice",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
 		},
@@ -31,4 +31,11 @@
 			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg"
 		}
 	],
+	"japanfood":[
+		{
+			"japanstore":"Eat a dick",
+			"jpknownfor":"Serving a can of whoop ass",
+			"jp":
+		}
+	]
 }
