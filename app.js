@@ -12,7 +12,6 @@ var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 //connecting calender picker
-var pickplace = require('./routes/pickplace')
 var tokyoschedule = require('./routes/tokyoschedule')
 var newyorkschedule = require('./routes/newyorkschedule')
 var romeschedule = require('./routes/romeschedule')
@@ -49,7 +48,6 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
-app.get('/pickplace', pickplace.view)
 app.get('/tokyoschedule',tokyoschedule.view)
 app.get('/newyorkschedule', newyorkschedule.view)
 app.get('/romeschedule', romeschedule.view)
