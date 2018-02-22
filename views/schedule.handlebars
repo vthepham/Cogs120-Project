@@ -9,50 +9,22 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 </head>
-<body onload="test()" onload="test2()">
+<body>
 
 <div class="navbar">
   <a href="chooseplace">Home</a>
-  <a href="schedule">Start Schedule</a>
+  <a href="schedule">Schedule</a>
   <div class="dropdown">
     <button class="dropbtn">More 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="chooseplace">Discover</a>
+      <a href="tokyoplace">Tokyo</a>
+      <a href="newyork">New York City</a>
+      <a href="rome">Rome</a>
       <a href="login">Log In</a>
       <a href="login">Sign Out</a>
     </div>
   </div> 
 </div>
-
-<div class="edit">
-<button type="button">Edit</button>
-</div>
-<!-- {{#each schedule}} -->
-<!-- <div class = "store name" id="{{store}}"> -->
-<!-- </div> -->
-<!-- {{/each}} -->
-<!-- To clear make a function onclick(){innerHTML = ""} something like that-->
-<p id="startEbisuya"></p>
-<p id="endEbisuya"></p>
-<p id="starttokyotour"></p>
-<p id="endtokyotour"></p>
-<!-- <p id="TokyoEvent1"></p> -->
-
-<script type="text/javascript">
-  var startEbisuya = {{Ebisuya}};
-  var endEbisuya = {{endEbisuya}};
-  var starttokyotour ={{tokyotour}};
-  var endtokyotour = {{endtokyotour}};
-  function test() {
-    if (startEbisuya != "0"){
-      document.getElementById("startEbisuya").innerHTML = "Ebisuya Asakusa: " + "Start: " + startEbisuya + " End: " + endEbisuya
-    }
-    if (starttokyotour != "0"){
-      document.getElementById("starttokyotour").innerHTML = "Tokyo FoodDrink Tour: " + "Start: " + starttokyotour + " End: " + endtokyotour
-    }
-  }
-</script>
-</body>
-</html>

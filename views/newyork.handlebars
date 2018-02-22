@@ -14,20 +14,23 @@
 
 <div class="navbar">
   <a href="chooseplace">Home</a>
-  <a href="schedule">Start Schedule</a>
+  <a href="schedule">Schedule</a>
   <div class="dropdown">
     <button class="dropbtn">More 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="chooseplace">Discover</a>
+      <a href="tokyoplace">Tokyo</a>
+      <a href="newyork">New York City</a>
+      <a href="rome">Rome</a>
       <a href="login">Log In</a>
       <a href="login">Sign Out</a>
     </div>
   </div> 
 </div>
 
-<form action="/schedule" method="get">
+<form action="/newyorkschedule" method="get">
 {{#each newyorkactivities}}
       	<div class="newyorkactivities" id="{{nyname}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->

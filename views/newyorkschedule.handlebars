@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/Bootstrap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body onload="test()">
+
+<div class="navbar">
+  <a href="chooseplace">Home</a>
+  <a href="schedule">Schedule</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chooseplace">Discover</a>
+      <a href="tokyoplace">Tokyo</a>
+      <a href="newyork">New York City</a>
+      <a href="rome">Rome</a>
+      <a href="login">Log In</a>
+      <a href="login">Sign Out</a>
+    </div>
+  </div> 
+</div>
+
+<div class="edit">
+<button type="button">Edit</button>
+</div>
+<!-- {{#each schedule}} -->
+<!-- <div class = "store name" id="{{store}}"> -->
+<!-- </div> -->
+<!-- {{/each}} -->
+<!-- To clear make a function onclick(){innerHTML = ""} something like that-->
+
+<!-- id for New York Activities -->
+<p id="startCentral"></p>
+<p id="endCentral"></p>
+<p id="startStatue"></p>
+<p id="endStatue"></p>
+<p id="startTop"></p>
+<p id="endTop"></p>
+<p id="startThe"></p>
+<p id="endThe"></p>
+<p id="startTimes"></p>
+<p id="endTimes"></p>
+<!-- New York Food -->
+<p id="startFive"></p>
+<p id="endFive"></p>
+<p id="startJuliana"></p>
+<p id="endJuliana"></p>
+<p id="startBleecker"></p>
+<p id="endBleecker"></p>
+<p id="startAmélie"></p>
+<p id="endAmélie"></p>
+<p id="startKeens"></p>
+<p id="endKeens"></p>
+<!-- New York Shopping -->
+<p id="startBergdorf"></p>
+<p id="endBergdorf"></p>
+<p id="startGrand"></p>
+<p id="endGrand"></p>
+<p id="startFifth"></p>
+<p id="endFifth"></p>
+
+<script type="text/javascript">
+  // variables for New York Activities
+  var startCentral = {{Central}};
+  var endCentral = {{endCentral}};
+  var startStatue = {{Statue}};
+  var endStatue = {{endStatue}};
+  var startTop = {{Top}};
+  var endTop = {{endTop}};
+  var startThe = {{The}};
+  var endThe = {{endThe}};
+  var startTimes = {{Times}};
+  var endTimes = {{endTimes}};
+  // // New York Food
+  var startFive = {{Five}};
+  var endFive = {{endFive}};
+  var startJuliana = {{Juliana}};
+  var endJuliana = {{endJuliana}};
+  var startBleecker = {{Bleecker}};
+  var endBleecker = {{endBleecker}};
+  var startAmélie = {{Amélie}};
+  var endAmélie = {{endAmélie}};
+  var startKeens = {{Keens}};
+  var endKeens = {{endKeens}};
+  // //New York Shopping
+  var startBergdorf = {{Bergdorf}};
+  var endBergdorf = {{endBergdorf}};
+  var startGrand = {{Grand}};
+  var endGrand = {{endGrand}};
+  var startFifth = {{Fifth}};
+  var endFifth = {{endFifth}};
+
+  function test() {
+    if (startCentral != "0"){
+      document.getElementById("startCentral").innerHTML = "Central Park: " + "Start: " + startCentral + " End: " + endCentral
+    }
+    if (startStatue != "0"){
+      document.getElementById("startStatue").innerHTML = "Statue of Liberty: " + "Start: " + startStatue + " End: " + endStatue
+    }
+    if (startTop != "0"){
+      document.getElementById("startTop").innerHTML = "Top of the Rock Observation Deck: " + "Start: " + startTop + " End: " + endTop
+    }
+    if (startThe != "0"){
+      document.getElementById("startThe").innerHTML = "The Metropolitan Museum of Art: " + "Start: " + startThe + " End: " + endThe
+    }
+    if (startTimes != "0"){
+      document.getElementById("startTimes").innerHTML = "Times Square: " + "Start: " + startTimes + " End: " + endTimes
+    }
+    if (startFive != "0"){
+      document.getElementById("startFive").innerHTML = "5 Napkin Burger: " + "Start: " + startFive + " End: " + endFive
+    }
+    if (startJuliana != "0"){
+      document.getElementById("startJuliana").innerHTML = "Juliana's Pizza: " + "Start: " + startJuliana + " End: " + endJuliana 
+    }
+    if (startBleecker != "0"){
+      document.getElementById("startBleecker").innerHTML = "Bleecker Street Pizza: " + "Start: " + startBleecker + " End: " + endBleecker
+    }
+    if (startAmélie != "0"){
+      document.getElementById("startAmélie").innerHTML = "Amélie: " + "Start: " + startAmélie + " End: " + endAmélie
+    }
+    if (startKeens != "0"){
+      document.getElementById("startKeens").innerHTML = "Keens Steakhouse: " + "Start: " + startKeens + " End: " + endKeens
+    }
+    if (startBergdorf != "0"){
+      document.getElementById("startBergdorf").innerHTML = "Bergdorf Goodman: " + "Start: " + startBergdorf + " End: " + endBergdorf
+    }
+    if (startGrand != "0"){
+      document.getElementById("startGrand").innerHTML = "Grand Central Market: " + "Start: " + startGrand + " End: " + endGrand
+    }
+    if (startFifth != "0"){
+      document.getElementById("startFifth").innerHTML = "Fifth Avenue Street: " + "Start: " + startFifth + " End: " + endFifth
+    }
+  }
+</script>
+</body>
+</html>

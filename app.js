@@ -13,8 +13,11 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 //connecting calender picker
 var pickplace = require('./routes/pickplace')
-var schedule = require('./routes/schedule')
+var tokyoschedule = require('./routes/tokyoschedule')
+var newyorkschedule = require('./routes/newyorkschedule')
+var romeschedule = require('./routes/romeschedule')
 var chooseplace = require('./routes/chooseplace')
+var schedule = require('./routes/schedule')
 var login = require('./routes/login')
 var tokyoplace = require('./routes/tokyoplace')
 var newyork = require('./routes/newyork')
@@ -47,12 +50,15 @@ app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/pickplace', pickplace.view)
-app.get('/schedule',schedule.view)
+app.get('/tokyoschedule',tokyoschedule.view)
+app.get('/newyorkschedule', newyorkschedule.view)
+app.get('/romeschedule', romeschedule.view)
 app.get('/chooseplace', chooseplace.view)
 app.get('/login', login.view)
 app.get('/tokyoplace', tokyoplace.view)
 app.get('/newyork', newyork.view)
 app.get('/rome', rome.view)
+app.get('/schedule', schedule.view)
 
 app.post('/index', index.view)
 

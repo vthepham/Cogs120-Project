@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/Bootstrap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body onload="test()">
+
+<div class="navbar">
+  <a href="chooseplace">Home</a>
+  <a href="schedule">Schedule</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chooseplace">Discover</a>
+      <a href="tokyoplace">Tokyo</a>
+      <a href="newyork">New York City</a>
+      <a href="rome">Rome</a>
+      <a href="login">Log In</a>
+      <a href="login">Sign Out</a>
+    </div>
+  </div> 
+</div>
+
+<div class="edit">
+<button type="button">Edit</button>
+</div>
+<!-- {{#each schedule}} -->
+<!-- <div class = "store name" id="{{store}}"> -->
+<!-- </div> -->
+<!-- {{/each}} -->
+<!-- To clear make a function onclick(){innerHTML = ""} something like that-->
+
+<!-- id for Rome Activities -->
+<p id="startColosseum"></p>
+<p id="endColosseum"></p>
+<p id="startPantheon"></p>
+<p id="endPantheon"></p>
+<p id="startVatican"></p>
+<p id="endVatican"></p>
+<p id="startTivoli"></p>
+<p id="endTivoli"></p>
+<p id="startTrevi"></p>
+<p id="endTrevi"></p>
+<!-- Rome Food -->
+<p id="startPane"></p>
+<p id="endPane"></p>
+<p id="startProsciutteria"></p>
+<p id="endProsciutteria"></p>
+<p id="startIl"></p>
+<p id="endIl"></p>
+<p id="startLa"></p>
+<p id="endLa"></p>
+<p id="startFederica"></p>
+<p id="endFederica"></p>
+<!-- Rome Shopping -->
+<p id="startPaciotti"></p>
+<p id="endPaciotti"></p>
+<p id="startCastel"></p>
+<p id="endCastel"></p>
+<p id="startMercato"></p>
+<p id="endMercato"></p>
+
+<script type="text/javascript">
+  // variables for New York Activities
+  var startColosseum = {{Colosseum}};
+  var endColosseum = {{endColosseum}};
+  var startPantheon = {{Pantheon}};
+  var endPantheon = {{endPantheon}};
+  var startVatican = {{Vatican}};
+  var endVatican = {{endVatican}};
+  var startTivoli = {{Tivoli}};
+  var endTivoli = {{endTivoli}};
+  var startTrevi = {{Trevi}};
+  var endTrevi = {{endTrevi}};
+  // // // New York Food
+  var startPane = {{Pane}};
+  var endPane = {{endPane}};
+  var startProsciutteria = {{Prosciutteria}};
+  var endProsciutteria = {{endProsciutteria}};
+  var startIl = {{Il}};
+  var endIl = {{endIl}};
+  var startLa = {{La}};
+  var endLa = {{endLa}};
+  var startFederica = {{Federica}};
+  var endFederica = {{endFederica}};
+  // // //New York Shopping
+  var startPaciotti = {{Paciotti}};
+  var endPaciotti = {{endPaciotti}};
+  var startCastel = {{Castel}};
+  var endCastel = {{endCastel}};
+  var startMercato = {{Mercato}};
+  var endMercato = {{endMercato}};
+
+  function test() {
+    if (startColosseum != "0"){
+      document.getElementById("startColosseum").innerHTML = "Colosseum: " + "Start: " + startColosseum + " End: " + endColosseum
+    }
+    if (startPantheon != "0"){
+      document.getElementById("startPantheon").innerHTML = "Pantheon: " + "Start: " + startPantheon + " End: " + endPantheon
+    }
+    if (startVatican != "0"){
+      document.getElementById("startVatican").innerHTML = "Vatican City St Peter’s, Sistine Chapel: " + "Start: " + startVatican + " End: " + endVatican
+    }
+    if (startTivoli != "0"){
+      document.getElementById("startTivoli").innerHTML = "Hadrian's Villa and Villa d'Este: " + "Start: " + startTivoli + " End: " + endTivoli
+    }
+    if (startTrevi != "0"){
+      document.getElementById("startTrevi").innerHTML = "Trevi Fountain: " + "Start: " + startTrevi + " End: " + endTrevi
+    }
+    if (startPane != "0"){
+      document.getElementById("startPane").innerHTML = "Pane e Salame: " + "Start: " + startPane + " End: " + endPane
+    }
+    if (startProsciutteria != "0"){
+      document.getElementById("startProsciutteria").innerHTML = "Prosciutteria Cantina Dei Papi: " + "Start: " + startProsciutteria + " End: " + endProsciutteria 
+    }
+    if (startIl != "0"){
+      document.getElementById("startIl").innerHTML = "Il Tamburello di Pulcinella: " + "Start: " + startIl + " End: " + endIl
+    }
+    if (startLa != "0"){
+      document.getElementById("startLa").innerHTML = "La Pergola: " + "Start: " + startLa + " End: " + endLa
+    }
+    if (startFederica != "0"){
+      document.getElementById("startFederica").innerHTML = "Federica & Barbara of BB Kitchen: " + "Start: " + startFederica + " End: " + endFederica
+    }
+    if (startPaciotti != "0"){
+      document.getElementById("startPaciotti").innerHTML = "Paciotti Salumeria: " + "Start: " + startPaciotti + " End: " + endPaciotti
+    }
+    if (startCastel != "0"){
+      document.getElementById("startCastel").innerHTML = "Castel Romano Designer Outlet: " + "Start: " + startCastel + " End: " + endCastel
+    }
+    if (startMercato != "0"){
+      document.getElementById("startMercato").innerHTML = "Mercato Trionfale: " + "Start: " + startMercato + " End: " + endMercato
+    }
+
+  }
+</script>
+</body>
+</html>

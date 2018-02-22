@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/Bootstrap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body onload="test()">
+
+<div class="navbar">
+  <a href="chooseplace">Home</a>
+  <a href="schedule">Schedule</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chooseplace">Discover</a>
+      <a href="tokyoplace">Tokyo</a>
+      <a href="newyork">New York City</a>
+      <a href="rome">Rome</a>
+      <a href="login">Log In</a>
+      <a href="login">Sign Out</a>
+    </div>
+  </div> 
+</div>
+
+<div class="edit">
+<button type="button">Edit</button>
+</div>
+<!-- {{#each schedule}} -->
+<!-- <div class = "store name" id="{{store}}"> -->
+<!-- </div> -->
+<!-- {{/each}} -->
+<!-- To clear make a function onclick(){innerHTML = ""} something like that-->
+
+<!-- id for Tokyo Activities -->
+<p id="startEbisuya"></p>
+<p id="endEbisuya"></p>
+<p id="starttokyotour"></p>
+<p id="endtokyotour"></p>
+<p id="startShinjuku"></p>
+<p id="endShinjuku"></p>
+<p id="startFuji"></p>
+<p id="endFuji"></p>
+<p id="startRyogoku"></p>
+<p id="endRyogoku"></p>
+<!-- Tokyo Food -->
+<p id="startIchiran"></p>
+<p id="endIchiran"></p>
+<p id="startNabezo"></p>
+<p id="endNabezo"></p>
+<p id="startDaiwa"></p>
+<p id="endDaiwa"></p>
+<p id="startIse"></p>
+<p id="endIse"></p>
+<p id="startHan"></p>
+<p id="endHan"></p>
+<!-- Tokyo Shopping -->
+<p id="startIsetan"></p>
+<p id="endIsetan"></p>
+<p id="startDiver"></p>
+<p id="endDiver"></p>
+<p id="startShin"></p>
+<p id="endShin"></p>
+
+<script type="text/javascript">
+  // variables for Tokyo Activities
+  var startEbisuya = {{Ebisuya}};
+  var endEbisuya = {{endEbisuya}};
+  var starttokyotour = {{tokyotour}};
+  var endtokyotour = {{endtokyotour}};
+  var startShinjuku = {{Shinjuku}};
+  var endShinjuku = {{endShinjuku}};
+  var startFuji = {{Fuji}};
+  var endFuji = {{endFuji}};
+  var startRyogoku = {{Ryogoku}};
+  var endRyogoku = {{endRyogoku}};
+  // Tokyo Food
+  var startIchiran = {{Ichiran}};
+  var endIchiran = {{endIchiran}};
+  var startNabezo = {{Nabezo}};
+  var endNabezo = {{endNabezo}};
+  var startDaiwa = {{Daiwa}};
+  var endDaiwa = {{endDaiwa}};
+  var startIse = {{Ise}};
+  var endIse = {{endIse}};
+  var startHan = {{Han}};
+  var endHan = {{endHan}};
+  //Tokyo Shopping
+  var startIsetan = {{Isetan}};
+  var endIsetan = {{endIsetan}};
+  var startDiver = {{Diver}};
+  var endDiver = {{endDiver}};
+  var startShin = {{Shin}};
+  var endShin = {{endShin}};
+
+  function test() {
+    if (startEbisuya != "0"){
+      document.getElementById("startEbisuya").innerHTML = "Ebisuya Asakusa: " + "Start: " + startEbisuya + " End: " + endEbisuya
+    }
+    if (starttokyotour != "0"){
+      document.getElementById("starttokyotour").innerHTML = "Tokyo FoodDrink Tour: " + "Start: " + starttokyotour + " End: " + endtokyotour
+    }
+    if (startShinjuku != "0"){
+      document.getElementById("startShinjuku").innerHTML = "Shinjuku Gyoen National Garden: " + "Start: " + startShinjuku + " End: " + endShinjuku
+    }
+    if (startFuji != "0"){
+      document.getElementById("startFuji").innerHTML = "Mt. Fuji: " + "Start: " + startFuji + " End: " + endFuji
+    }
+    if (startRyogoku != "0"){
+      document.getElementById("startRyogoku").innerHTML = "Ryogoku Kokugikan (Sumo): " + "Start: " + startRyogoku + " End: " + endRyogoku
+    }
+    if (startIchiran != "0"){
+      document.getElementById("startIchiran").innerHTML = "Ichiran Shibuya (Ramen): " + "Start: " + startIchiran + " End: " + endIchiran
+    }
+    if (startNabezo != "0"){
+      document.getElementById("startNabezo").innerHTML = "Nabezo Shinjuku East Entrance (BBQ): " + "Start: " + startNabezo + " End: " + endNabezo 
+    }
+    if (startDaiwa != "0"){
+      document.getElementById("startDaiwa").innerHTML = "Daiwa Sushi: " + "Start: " + startDaiwa + " End: " + endDaiwa
+    }
+    if (startIse != "0"){
+      document.getElementById("startIse").innerHTML = "Ise Sueyoshi: " + "Start: " + startIse + " End: " + endIse
+    }
+    if (startHan != "0"){
+      document.getElementById("startHan").innerHTML = "Han no Daidokoro Kadochika: " + "Start: " + startHan + " End: " + endHan
+    }
+    if (startIsetan != "0"){
+      document.getElementById("startIsetan").innerHTML = "Isetan Shinjuku Store: " + "Start: " + startIsetan + " End: " + endIsetan
+    }
+    if (startDiver != "0"){
+      document.getElementById("startDiver").innerHTML = "Diver City Tokyo Plaza: " + "Start: " + startDiver + " End: " + endDiver
+    }
+    if (startShin != "0"){
+      document.getElementById("startShin").innerHTML = "Shin Nakamise Shopping Street: " + "Start: " + startShin + " End: " + endShin
+    }
+
+  }
+</script>
+</body>
+</html>

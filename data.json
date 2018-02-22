@@ -38,13 +38,13 @@
 	],
 	"japanfood":[
 		{
-			"jpstore": "Ichiran, Shibuya",
+			"jpstore": "Ichiran Shibuya",
 			"jpknown": "Ramen",
 			"jpfoodprice": "$10-$20",
 			"jpimage": "https://media-cdn.tripadvisor.com/media/photo-s/07/c0/f7/7b/ichiran-shibuya.jpg"
 		},
 		{
-			"jpstore": "Nabezo, Shinjuku East Entrance",
+			"jpstore": "Nabezo Shinjuku East Entrance",
 			"jpknown": "BBQ",
 			"jpfoodprice": "$20-$30",
 			"jpimage": "https://media-cdn.tripadvisor.com/media/photo-s/10/b8/78/91/photo5jpg.jpg"
@@ -124,13 +124,13 @@
 	],
 	"newyorkfood":[
 		{
-			"nystore": "5 Napkin Burger",
+			"nystore": "Five Napkin Burger",
 			"nyknown": "5 Napkin Burgers, Onion Rings, Beer",
 			"nyfoodprice": "$10-$15",
 			"nyimage": "http://5napkinburger.com/wp-content/uploads/2017/10/reseized-locations.jpg"
 		},
 		{
-			"nystore": "Juliana's Pizza",
+			"nystore": "Juliana Pizza",
 			"nyknown": "Pizza, Spagetti",
 			"nyfoodprice": "$10-$20",
 			"nyimage": "https://media.tumblr.com/51bb41d3e4a8912eabb7c86586ab4f88/tumblr_inline_mhkbjhlo0v1qz4rgp.jpg"
@@ -166,7 +166,7 @@
 			"nyshopimage":"http://blogs.kcrw.com/whichwayla/wp-content/uploads/2013/05/DSC00081.jpg"
 		},
 		{
-			"nyshopping": "5th Avenue Steet",
+			"nyshopping": "Fifth Avenue Steet",
 			"nyshopdes": "Street with stores along the street",
 			"nyshopimage":"https://fthmb.tqn.com/m8IEhgEEkex3Q5mCCTYKW0KQilA=/960x0/filters:no_upscale()/about/fifth_avenue_shopping_04-56a3fd163df78cf772803f90.jpg" 
 		}
