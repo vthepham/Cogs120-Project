@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>T-T-T-Tokyo!</title>
+	<title>New York Baby!!!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
@@ -28,17 +28,17 @@
 </div>
 
 <form action="/schedule" method="get">
-{{#each japanactivities}}
-      	<div class="japanactivities" id="{{jpname}}">
+{{#each newyorkactivities}}
+      	<div class="newyorkactivities" id="{{nyname}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
-          		<img src="{{jppic}}" class "img-responsive" style="width: 100%">
-          		<p>{{jpname}}</p>
-          		<p>{{jpdes}}</p>
-          		<p>{{jphours}}</p>
-          		<p>{{jpprices}}</p>
+          		<img src="{{nypic}}" class "img-responsive" style="width: 100%">
+          		<p>{{nyname}}</p>
+          		<p>{{nydes}}</p>
+          		<p>{{nyhour}}</p>
+          		<p>{{nyprice}}</p>
       	</div>
     		<div>
-				Start:<select id = {{jpname}} name= {{jpname}} value=null>
+				Start:<select id = {{nyname}} name= {{nyname}} value=null>
 					<!-- <option value="0" selected>0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -73,7 +73,7 @@
 					<option value='23'>11 PM</option>
 					<option value='24'>12 AM</option>
 				</select>
-				End: <select id = end{{jpname}} name= end{{jpname}} value="0">
+				End: <select id = end{{nyname}} name= end{{nyname}} value="0">
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -98,16 +98,16 @@
 		</div>
 {{/each}}
 
-{{#each japanfood}}
-	<div class="japanfood" id="{{jpstore}}">
+{{#each newyorkfood}}
+	<div class="newyorkfood" id="{{nystore}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
-          		<img src="{{jpimage}}" class "img-responsive" style="width: 100%">
-          		<p>{{jpstore}}</p>
-          		<p>{{jpknown}}</p>
-          		<p>{{jpfoodprice}}</p>
+          		<img src="{{nyimage}}" class "img-responsive" style="width: 100%">
+          		<p>{{nystore}}</p>
+          		<p>{{nyknown}}</p>
+          		<p>{{nyfoodprice}}</p>
       	</div>
     		<div>
-				Start:<select id = {{jpstore}} name= {{jpstore}} value=null>
+				Start:<select id = {{nystore}} name= {{nystore}} value=null>
 					<!-- <option value="0" selected>0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -142,7 +142,7 @@
 					<option value='23'>11 PM</option>
 					<option value='24'>12 AM</option>
 				</select>
-				End: <select id = end{{jpstore}} name= end{{jpstore}} value="0">
+				End: <select id = end{{nystore}} name= end{{nystore}} value="0">
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -167,15 +167,15 @@
 		</div>
 {{/each}}
 
-{{#each japanshopping}}
-	<div class="japanshopping" id="{{jpshopping}}">
+{{#each newyorkshopping}}
+	<div class="nyshopping" id="{{nyshopping}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
-          		<img src="{{jpshopimage}}" class "img-responsive" style="width: 100%">
-          		<p>{{jpshopping}}</p>
-          		<p>{{jpshopdes}}</p>
+          		<img src="{{nyshopimage}}" class "img-responsive" style="width: 100%">
+          		<p>{{nyshopping}}</p>
+          		<p>{{nyshopdes}}</p>
       	</div>
     		<div>
-				Start:<select id = {{jpshopping}} name= {{jpshopping}} value=null>
+				Start:<select id = {{nyshopping}} name= {{nyshopping}} value=null>
 					<!-- <option value="0" selected>0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -210,7 +210,7 @@
 					<option value='23'>11 PM</option>
 					<option value='24'>12 AM</option>
 				</select>
-				End: <select id = end{{jpshopping}} name= end{{jpshopping}} value="0">
+				End: <select id = end{{nyshopping}} name= end{{nyshopping}} value="0">
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>

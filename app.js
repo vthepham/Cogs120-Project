@@ -12,12 +12,13 @@ var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 //connecting calender picker
-var calpick = require('./routes/calpick')
 var pickplace = require('./routes/pickplace')
 var schedule = require('./routes/schedule')
 var chooseplace = require('./routes/chooseplace')
 var login = require('./routes/login')
 var tokyoplace = require('./routes/tokyoplace')
+var newyork = require('./routes/newyork')
+var rome = require('./routes/rome')
 
 
 var app = express();
@@ -45,12 +46,13 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
-app.get('/calpick', calpick.view)
 app.get('/pickplace', pickplace.view)
 app.get('/schedule',schedule.view)
 app.get('/chooseplace', chooseplace.view)
 app.get('/login', login.view)
 app.get('/tokyoplace', tokyoplace.view)
+app.get('/newyork', newyork.view)
+app.get('/rome', rome.view)
 
 app.post('/index', index.view)
 

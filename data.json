@@ -5,7 +5,7 @@
 			"jpdes": "Get a feel for Tokyo while you are on this fun rickshaw tour of Asakusa! See temples and buildings that retain the feel of ancient Edo as you ride in style!",
 			"jphours": "Tours offer: 30 minutes, 1-hour, 2-hour, 3-hour",
 			"jpprices": "30 minutes = $40, 1-hour = $80, 2-hour = $150, 3-hour = $220",
-			"jappic": "https://d18gmz9e98r8v5.cloudfront.net/ptr/20150604041707_1844209343_11463_9.jpg"	
+			"jppic": "https://d18gmz9e98r8v5.cloudfront.net/ptr/20150604041707_1844209343_11463_9.jpg"	
 		},
 		{
 			"jpname": "Tokyo FooDrink Tour - Japan Wonder Travel",
@@ -18,21 +18,21 @@
 			"jpname": "Shinjuku Gyoen National Garden",
 			"jpdes": "Visit the national park and experience one of the best places to see cherry blossoms!",
 			"jphours": "Spend around 2-3 hours",
-			"jpprice": "free unless you want a tour which ranges around $100",
+			"jpprices": "free unless you want a tour which ranges around $100",
 			"jppic": "http://pixdaus.com/files/items/pics/0/42/157042_c4c260ff67b2cebc77134d6ddd8740f5_large.jpg"			
 		},
 		{
 			"jpname": "Mt Fuji, Lake Ashi and Bullet Train Day Trip from Tokyo",
 			"jpdes": "Visit the famous Mt Fugi on this full day tour!",
 			"jphours": "Full day 8+ hours",
-			"jpprice": "Tour: $160",
+			"jpprices": "Tour: $160",
 			"jppic": "http://antilogvacations.in/Images//ActivityDetail//Basic//International//Japan//Tokyo//Standard-Activities//Mt-Fuji-Lake-Ashi-and-Bullet-Train-Day-//Gallary//Mt-Fuji--Lake-Ashi-and-Bullet-Train-Day-Trip-from-_0.jpg"			
 		},
 		{
 			"jpname": "Ryogoku Kokugikan",
 			"jpdes": "View a sumo wrestling tournament.",
 			"jphours": "Sumo Wrestling Tournament: 3+ hours",
-			"jpprice": "Tournament = $90, Tournament + Walking tour with a wrestler = $150",
+			"jpprices": "Tournament = $90, Tournament + Walking tour with a wrestler = $150",
 			"jppic": "https://media-cdn.tripadvisor.com/media/photo-s/0f/c8/fd/9d/ryogoku-kokugikan.jpg"
 		}
 	],

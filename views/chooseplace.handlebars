@@ -3,26 +3,39 @@
 <head>
 	<title>Place</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- Script to send user to selected country page -->
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/Bootstrap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-	<a href="tokyoplace">Tokyo</a>
-	<hr>
-	<hr>
-	<hr>
-	<a>Select a country</a>
-	<div class="selectcountry">
-		<select id = "country" name="Country">
-			<option value="United States">United States</option>
-			<option value="Europe">Europe</option>
-			<option value="Japan">Japan</option>
-			<option value="Austrailia">Austrailia</option>
-		</select>
-	</div>
-	<input type="submit" name="country">
+<div class="navbar">
+  <a href="chooseplace">Home</a>
+  <a href="schedule">Start Schedule</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chooseplace">Discover</a>
+      <a href="login">Log In</a>
+      <a href="login">Sign Out</a>
+    </div>
+  </div> 
+</div>
 
+	<div>
+		<img src="http://www.sauder.ubc.ca/News/2016/~/media/Images/Alumni/Tokyo.ashx" alt = "Japan" style= "width:100%">
+		<a href="tokyoplace">Tokyo</a>
+	</div>
+	<div>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" alt ="New York City" style="width: 100%">
+		<a href="newyork">New York</a>
+	</div>
+	<div>
+		<img src="http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/Rome-wallpaper-271.jpeg" alt="Rome" style="width: 100%">
+		<a href="rome">Rome</a>
+	</div>
 </body>
 </html>

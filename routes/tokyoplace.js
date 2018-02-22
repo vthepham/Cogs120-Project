@@ -1,7 +1,7 @@
 /*
 Generate page that user picks
 */
-var data = require('../tokyodata.json');
+var data = require('../data.json');
 
 exports.view = function(req, res){
 	console.log(data);

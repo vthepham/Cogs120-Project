@@ -1,1 +1,0 @@
-var time = document.getElementById("hours").value;
