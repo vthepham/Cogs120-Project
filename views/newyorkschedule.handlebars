@@ -101,45 +101,56 @@
 
   function test() {
     if (startCentral != "0"){
-      document.getElementById("startCentral").innerHTML = "Central Park: " + "Start: " + startCentral + " End: " + endCentral
+      document.getElementById("startCentral").innerHTML = "Central Park: " + "Start: " + hourconvert(startCentral) + " - End: " + hourconvert(endCentral)
     }
     if (startStatue != "0"){
-      document.getElementById("startStatue").innerHTML = "Statue of Liberty: " + "Start: " + startStatue + " End: " + endStatue
+      document.getElementById("startStatue").innerHTML = "Statue of Liberty: " + "Start: " + hourconvert(startStatue) + " - End: " + hourconvert(endStatue)
     }
     if (startTop != "0"){
-      document.getElementById("startTop").innerHTML = "Top of the Rock Observation Deck: " + "Start: " + startTop + " End: " + endTop
+      document.getElementById("startTop").innerHTML = "Top of the Rock Observation Deck: " + "Start: " + hourconvert(startTop) + " - End: " + hourconvert(endTop)
     }
     if (startThe != "0"){
-      document.getElementById("startThe").innerHTML = "The Metropolitan Museum of Art: " + "Start: " + startThe + " End: " + endThe
+      document.getElementById("startThe").innerHTML = "The Metropolitan Museum of Art: " + "Start: " + hourconvert(startThe) + " - End: " + hourconvert(endThe)
     }
     if (startTimes != "0"){
-      document.getElementById("startTimes").innerHTML = "Times Square: " + "Start: " + startTimes + " End: " + endTimes
+      document.getElementById("startTimes").innerHTML = "Times Square: " + "Start: " + hourconvert(startTimes) + " - End: " + hourconvert(endTimes)
     }
     if (startFive != "0"){
-      document.getElementById("startFive").innerHTML = "5 Napkin Burger: " + "Start: " + startFive + " End: " + endFive
+      document.getElementById("startFive").innerHTML = "5 Napkin Burger: " + "Start: " + hourconvert(startFive) + " - End: " + hourconvert(endFive)
     }
     if (startJuliana != "0"){
-      document.getElementById("startJuliana").innerHTML = "Juliana's Pizza: " + "Start: " + startJuliana + " End: " + endJuliana 
+      document.getElementById("startJuliana").innerHTML = "Juliana's Pizza: " + "Start: " + hourconvert(startJuliana) + " - End: " + hourconvert(endJuliana) 
     }
     if (startBleecker != "0"){
-      document.getElementById("startBleecker").innerHTML = "Bleecker Street Pizza: " + "Start: " + startBleecker + " End: " + endBleecker
+      document.getElementById("startBleecker").innerHTML = "Bleecker Street Pizza: " + "Start: " + hourconvert(startBleecker) + " - End: " + hourconvert(endBleecker)
     }
     if (startAmélie != "0"){
-      document.getElementById("startAmélie").innerHTML = "Amélie: " + "Start: " + startAmélie + " End: " + endAmélie
+      document.getElementById("startAmélie").innerHTML = "Amélie: " + "Start: " + hourconvert(startAmélie) + " - End: " + hourconvert(endAmélie)
     }
     if (startKeens != "0"){
-      document.getElementById("startKeens").innerHTML = "Keens Steakhouse: " + "Start: " + startKeens + " End: " + endKeens
+      document.getElementById("startKeens").innerHTML = "Keens Steakhouse: " + "Start: " + hourconvert(startKeens) + " - End: " + hourconvert(endKeens)
     }
     if (startBergdorf != "0"){
-      document.getElementById("startBergdorf").innerHTML = "Bergdorf Goodman: " + "Start: " + startBergdorf + " End: " + endBergdorf
+      document.getElementById("startBergdorf").innerHTML = "Bergdorf Goodman: " + "Start: " + hourconvert(startBergdorf) + " - End: " + hourconvert(endBergdorf)
     }
     if (startGrand != "0"){
-      document.getElementById("startGrand").innerHTML = "Grand Central Market: " + "Start: " + startGrand + " End: " + endGrand
+      document.getElementById("startGrand").innerHTML = "Grand Central Market: " + "Start: " + hourconvert(startGrand) + " - End: " + hourconvert(endGrand)
     }
     if (startFifth != "0"){
-      document.getElementById("startFifth").innerHTML = "Fifth Avenue Street: " + "Start: " + startFifth + " End: " + endFifth
+      document.getElementById("startFifth").innerHTML = "Fifth Avenue Street: " + "Start: " + hourconvert(startFifth) + " - End: " + hourconvert(endFifth)
     }
   }
+
+  function hourconvert(hour){
+  if (parseInt(hour) > 12) {
+    var newtime = parseInt(hour) - 12;
+    newtime = newtime.toString() + " PM";
+  }
+  else{
+    var newtime = hour + " AM";
+  }
+  return newtime;
+}
 </script>
 </body>
 </html>

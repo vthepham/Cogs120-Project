@@ -101,46 +101,58 @@
 
   function test() {
     if (startEbisuya != "0"){
-      document.getElementById("startEbisuya").innerHTML = "Ebisuya Asakusa: " + "Start: " + startEbisuya + " End: " + endEbisuya
+      document.getElementById("startEbisuya").innerHTML = "Ebisuya Asakusa: " + "Start: " + hourconvert(startEbisuya) + " End: " + hourconvert(endEbisuya)
     }
     if (starttokyotour != "0"){
-      document.getElementById("starttokyotour").innerHTML = "Tokyo FoodDrink Tour: " + "Start: " + starttokyotour + " End: " + endtokyotour
+      document.getElementById("starttokyotour").innerHTML = "Tokyo FoodDrink Tour: " + "Start: " + hourconvert(starttokyotour) + " End: " + hourconvert(endtokyotour)
     }
     if (startShinjuku != "0"){
-      document.getElementById("startShinjuku").innerHTML = "Shinjuku Gyoen National Garden: " + "Start: " + startShinjuku + " End: " + endShinjuku
+      document.getElementById("startShinjuku").innerHTML = "Shinjuku Gyoen National Garden: " + "Start: " + hourconvert(startShinjuku) + " End: " + hourconvert(endShinjuku)
     }
     if (startFuji != "0"){
-      document.getElementById("startFuji").innerHTML = "Mt. Fuji: " + "Start: " + startFuji + " End: " + endFuji
+      document.getElementById("startFuji").innerHTML = "Mt. Fuji: " + "Start: " + hourconvert(startFuji) + " End: " + hourconvert(endFuji)
     }
     if (startRyogoku != "0"){
-      document.getElementById("startRyogoku").innerHTML = "Ryogoku Kokugikan (Sumo): " + "Start: " + startRyogoku + " End: " + endRyogoku
+      document.getElementById("startRyogoku").innerHTML = "Ryogoku Kokugikan (Sumo): " + "Start: " + hourconvert(startRyogoku) + " - End: " + hourconvert(endRyogoku)
     }
     if (startIchiran != "0"){
-      document.getElementById("startIchiran").innerHTML = "Ichiran Shibuya (Ramen): " + "Start: " + startIchiran + " End: " + endIchiran
+      document.getElementById("startIchiran").innerHTML = "Ichiran Shibuya (Ramen): " + "Start: " + hourconvert(startIchiran) + " - End: " + hourconvert(endIchiran)
     }
     if (startNabezo != "0"){
-      document.getElementById("startNabezo").innerHTML = "Nabezo Shinjuku East Entrance (BBQ): " + "Start: " + startNabezo + " End: " + endNabezo 
+      document.getElementById("startNabezo").innerHTML = "Nabezo Shinjuku East Entrance (BBQ): " + "Start: " + hourconvert(startNabezo) + " - End: " + hourconvert(endNabezo )
     }
     if (startDaiwa != "0"){
-      document.getElementById("startDaiwa").innerHTML = "Daiwa Sushi: " + "Start: " + startDaiwa + " End: " + endDaiwa
+      document.getElementById("startDaiwa").innerHTML = "Daiwa Sushi: " + "Start: " + hourconvert(startDaiwa) + " - End: " + hourconvert(endDaiwa)
     }
     if (startIse != "0"){
-      document.getElementById("startIse").innerHTML = "Ise Sueyoshi: " + "Start: " + startIse + " End: " + endIse
+      document.getElementById("startIse").innerHTML = "Ise Sueyoshi: " + "Start: " + hourconvert(startIse) + " - End: " + hourconvert(endIse)
     }
     if (startHan != "0"){
-      document.getElementById("startHan").innerHTML = "Han no Daidokoro Kadochika: " + "Start: " + startHan + " End: " + endHan
+      document.getElementById("startHan").innerHTML = "Han no Daidokoro Kadochika: " + "Start: " + hourconvert(startHan) + " - End: " + hourconvert(endHan)
     }
     if (startIsetan != "0"){
-      document.getElementById("startIsetan").innerHTML = "Isetan Shinjuku Store: " + "Start: " + startIsetan + " End: " + endIsetan
+      document.getElementById("startIsetan").innerHTML = "Isetan Shinjuku Store: " + "Start: " + hourconvert(startIsetan) + " - End: " + hourconvert(endIsetan)
     }
     if (startDiver != "0"){
-      document.getElementById("startDiver").innerHTML = "Diver City Tokyo Plaza: " + "Start: " + startDiver + " End: " + endDiver
+      document.getElementById("startDiver").innerHTML = "Diver City Tokyo Plaza: " + "Start: " + hourconvert(startDiver) + " - End: " + hourconvert(endDiver)
     }
     if (startShin != "0"){
-      document.getElementById("startShin").innerHTML = "Shin Nakamise Shopping Street: " + "Start: " + startShin + " End: " + endShin
+      document.getElementById("startShin").innerHTML = "Shin Nakamise Shopping Street: " + "Start: " + hourconvert(startShin) + " - End: " + hourconvert(endShin)
     }
 
   }
+
+function hourconvert(hour){
+  if (parseInt(hour) > 12) {
+    var newtime = parseInt(hour) - 12;
+    newtime = newtime.toString() + " PM";
+  }
+  else{
+    var newtime = hour + " AM";
+  }
+  return newtime;
+}
 </script>
+
 </body>
 </html>

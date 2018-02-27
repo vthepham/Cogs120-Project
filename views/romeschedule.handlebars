@@ -101,46 +101,58 @@
 
   function test() {
     if (startColosseum != "0"){
-      document.getElementById("startColosseum").innerHTML = "Colosseum: " + "Start: " + startColosseum + " End: " + endColosseum
+      document.getElementById("startColosseum").innerHTML = "Colosseum: " + "Start: " + hourconvert(startColosseum) + " - End: " + hourconvert(endColosseum)
     }
     if (startPantheon != "0"){
-      document.getElementById("startPantheon").innerHTML = "Pantheon: " + "Start: " + startPantheon + " End: " + endPantheon
+      document.getElementById("startPantheon").innerHTML = "Pantheon: " + "Start: " + hourconvert(startPantheon) + " - End: " + hourconvert(endPantheon)
     }
     if (startVatican != "0"){
-      document.getElementById("startVatican").innerHTML = "Vatican City St Peter’s, Sistine Chapel: " + "Start: " + startVatican + " End: " + endVatican
+      document.getElementById("startVatican").innerHTML = "Vatican City St Peter’s, Sistine Chapel: " + "Start: " + hourconvert(startVatican) + " - End: " + hourconvert(endVatican)
     }
     if (startTivoli != "0"){
-      document.getElementById("startTivoli").innerHTML = "Hadrian's Villa and Villa d'Este: " + "Start: " + startTivoli + " End: " + endTivoli
+      document.getElementById("startTivoli").innerHTML = "Hadrian's Villa and Villa d'Este: " + "Start: " + hourconvert(startTivoli) + " - End: " + hourconvert(endTivoli)
     }
     if (startTrevi != "0"){
-      document.getElementById("startTrevi").innerHTML = "Trevi Fountain: " + "Start: " + startTrevi + " End: " + endTrevi
+      document.getElementById("startTrevi").innerHTML = "Trevi Fountain: " + "Start: " + hourconvert(startTrevi) + " - End: " + hourconvert(endTrevi)
     }
     if (startPane != "0"){
-      document.getElementById("startPane").innerHTML = "Pane e Salame: " + "Start: " + startPane + " End: " + endPane
+      document.getElementById("startPane").innerHTML = "Pane e Salame: " + "Start: " + hourconvert(startPane) + " - End: " + hourconvert(endPane)
     }
     if (startProsciutteria != "0"){
-      document.getElementById("startProsciutteria").innerHTML = "Prosciutteria Cantina Dei Papi: " + "Start: " + startProsciutteria + " End: " + endProsciutteria 
+      document.getElementById("startProsciutteria").innerHTML = "Prosciutteria Cantina Dei Papi: " + "Start: " + hourconvert(startProsciutteria) + " - End: " + hourconvert(endProsciutteria) 
     }
     if (startIl != "0"){
-      document.getElementById("startIl").innerHTML = "Il Tamburello di Pulcinella: " + "Start: " + startIl + " End: " + endIl
+      document.getElementById("startIl").innerHTML = "Il Tamburello di Pulcinella: " + "Start: " + hourconvert(startIl) + " - End: " + hourconvert(endIl)
     }
     if (startLa != "0"){
-      document.getElementById("startLa").innerHTML = "La Pergola: " + "Start: " + startLa + " End: " + endLa
+      document.getElementById("startLa").innerHTML = "La Pergola: " + "Start: " + hourconvert(startLa) + " - End: " + hourconvert(endLa)
     }
     if (startFederica != "0"){
-      document.getElementById("startFederica").innerHTML = "Federica & Barbara of BB Kitchen: " + "Start: " + startFederica + " End: " + endFederica
+      document.getElementById("startFederica").innerHTML = "Federica & Barbara of BB Kitchen: " + "Start: " + hourconvert(startFederica) + " - End: " + hourconvert(endFederica)
     }
     if (startPaciotti != "0"){
-      document.getElementById("startPaciotti").innerHTML = "Paciotti Salumeria: " + "Start: " + startPaciotti + " End: " + endPaciotti
+      document.getElementById("startPaciotti").innerHTML = "Paciotti Salumeria: " + "Start: " + hourconvert(startPaciotti) + " - End: " + hourconvert(endPaciotti)
     }
     if (startCastel != "0"){
-      document.getElementById("startCastel").innerHTML = "Castel Romano Designer Outlet: " + "Start: " + startCastel + " End: " + endCastel
+      document.getElementById("startCastel").innerHTML = "Castel Romano Designer Outlet: " + "Start: " + hourconvert(startCastel) + " - End: " + hourconvert(endCastel)
     }
     if (startMercato != "0"){
-      document.getElementById("startMercato").innerHTML = "Mercato Trionfale: " + "Start: " + startMercato + " End: " + endMercato
+      document.getElementById("startMercato").innerHTML = "Mercato Trionfale: " + "Start: " + hourconvert(startMercato) + " - End: " + hourconvert(endMercato)
     }
 
   }
+
+function hourconvert(hour){
+  if (parseInt(hour) > 12) {
+    var newtime = parseInt(hour) - 12;
+    newtime = newtime.toString() + " PM";
+  }
+  else{
+    var newtime = hour + " AM";
+  }
+  return newtime;
+}
+
 </script>
 </body>
 </html>
