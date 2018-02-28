@@ -21,6 +21,7 @@ var login = require('./routes/login')
 var tokyoplace = require('./routes/tokyoplace')
 var newyork = require('./routes/newyork')
 var rome = require('./routes/rome')
+var help = require('./routes/help')
 
 
 var app = express();
@@ -57,6 +58,7 @@ app.get('/tokyoplace', tokyoplace.view)
 app.get('/newyork', newyork.view)
 app.get('/rome', rome.view)
 app.get('/schedule', schedule.view)
+app.get('/help', help.view)
 
 app.post('/index', index.view)
 
