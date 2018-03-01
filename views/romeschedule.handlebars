@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Rome Schechule!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
@@ -8,12 +9,36 @@
     <link href="/css/Bootstrap" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <style>
+    .addbut {
+    background-color: #4CAF50;
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  </style>
 </head>
 <body onload="test()">
 
 <div class="navbar">
   <a href="chooseplace">Home</a>
-  <a href="schedule">Schedule</a>
+  <div class="dropdown">
+    <button class="dropbtn">Schedule 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tokyoschedule">Tokyo</a>
+      <a href="newyorkschedule">New York City</a>
+      <a href="romeschedule">Rome</a>
+    </div>
+  </div> 
+<!--   <a href="schedule">Schedule</a> -->
   <div class="dropdown">
     <button class="dropbtn">More 
       <i class="fa fa-caret-down"></i>
@@ -25,12 +50,20 @@
       <a href="rome">Rome</a>
       <a href="login">Log In</a>
       <a href="login">Sign Out</a>
+      <a href="help">Help?</a>
     </div>
   </div> 
 </div>
 
-<div class="edit">
+<!-- <div class="edit">
 <button type="button">Edit</button>
+</div> -->
+<br>
+<div>
+   <font size="+2">Schedule for Rome</font>
+</div>
+<div class = "addbut">
+  <a href="rome" class= "botton">Add Rome Event</a>
 </div>
 <!-- {{#each schedule}} -->
 <!-- <div class = "store name" id="{{store}}"> -->
@@ -39,34 +72,34 @@
 <!-- To clear make a function onclick(){innerHTML = ""} something like that-->
 
 <!-- id for Rome Activities -->
-<p id="startColosseum"></p>
-<p id="endColosseum"></p>
-<p id="startPantheon"></p>
-<p id="endPantheon"></p>
-<p id="startVatican"></p>
-<p id="endVatican"></p>
-<p id="startTivoli"></p>
-<p id="endTivoli"></p>
-<p id="startTrevi"></p>
-<p id="endTrevi"></p>
+<p style="background-color:Tomato;" id="startColosseum"></p>
+<p style="background-color:Tomato;" id="endColosseum"></p>
+<p style="background-color:Tomato;" id="startPantheon"></p>
+<p style="background-color:Tomato;" id="endPantheon"></p>
+<p style="background-color:Tomato;" id="startVatican"></p>
+<p style="background-color:Tomato;" id="endVatican"></p>
+<p style="background-color:Tomato;" id="startTivoli"></p>
+<p style="background-color:Tomato;" id="endTivoli"></p>
+<p style="background-color:Tomato;" id="startTrevi"></p>
+<p style="background-color:Tomato;" id="endTrevi"></p>
 <!-- Rome Food -->
-<p id="startPane"></p>
-<p id="endPane"></p>
-<p id="startProsciutteria"></p>
-<p id="endProsciutteria"></p>
-<p id="startIl"></p>
-<p id="endIl"></p>
-<p id="startLa"></p>
-<p id="endLa"></p>
-<p id="startFederica"></p>
-<p id="endFederica"></p>
+<p style="background-color:GreenYellow;" id="startPane"></p>
+<p style="background-color:GreenYellow;" id="endPane"></p>
+<p style="background-color:GreenYellow;" id="startProsciutteria"></p>
+<p style="background-color:GreenYellow;" id="endProsciutteria"></p>
+<p style="background-color:GreenYellow;" id="startIl"></p>
+<p style="background-color:GreenYellow;" id="endIl"></p>
+<p style="background-color:GreenYellow;" id="startLa"></p>
+<p style="background-color:GreenYellow;" id="endLa"></p>
+<p style="background-color:GreenYellow;" id="startFederica"></p>
+<p style="background-color:GreenYellow;" id="endFederica"></p>
 <!-- Rome Shopping -->
-<p id="startPaciotti"></p>
-<p id="endPaciotti"></p>
-<p id="startCastel"></p>
-<p id="endCastel"></p>
-<p id="startMercato"></p>
-<p id="endMercato"></p>
+<p style="background-color:Gold;" id="startPaciotti"></p>
+<p style="background-color:Gold;" id="endPaciotti"></p>
+<p style="background-color:Gold;" id="startCastel"></p>
+<p style="background-color:Gold;" id="endCastel"></p>
+<p style="background-color:Gold;" id="startMercato"></p>
+<p style="background-color:Gold;" id="endMercato"></p>
 
 <script type="text/javascript">
   // variables for New York Activities
@@ -101,43 +134,43 @@
 
   function test() {
     if (startColosseum != "0"){
-      document.getElementById("startColosseum").innerHTML = "Colosseum: " + "Start: " + hourconvert(startColosseum) + " - End: " + hourconvert(endColosseum)
+      document.getElementById("startColosseum").innerHTML = "<b>Colosseum:</b> " + "Start: " + hourconvert(startColosseum) + " - End: " + hourconvert(endColosseum)
     }
     if (startPantheon != "0"){
-      document.getElementById("startPantheon").innerHTML = "Pantheon: " + "Start: " + hourconvert(startPantheon) + " - End: " + hourconvert(endPantheon)
+      document.getElementById("startPantheon").innerHTML = "<b>Pantheon:</b> " + "Start: " + hourconvert(startPantheon) + " - End: " + hourconvert(endPantheon)
     }
     if (startVatican != "0"){
-      document.getElementById("startVatican").innerHTML = "Vatican City St Peter’s, Sistine Chapel: " + "Start: " + hourconvert(startVatican) + " - End: " + hourconvert(endVatican)
+      document.getElementById("startVatican").innerHTML = "<b>Vatican City St Peter’s, Sistine Chapel:</b> " + "Start: " + hourconvert(startVatican) + " - End: " + hourconvert(endVatican)
     }
     if (startTivoli != "0"){
-      document.getElementById("startTivoli").innerHTML = "Hadrian's Villa and Villa d'Este: " + "Start: " + hourconvert(startTivoli) + " - End: " + hourconvert(endTivoli)
+      document.getElementById("startTivoli").innerHTML = "<b>Hadrian's Villa and Villa d'Este:</b> " + "Start: " + hourconvert(startTivoli) + " - End: " + hourconvert(endTivoli)
     }
     if (startTrevi != "0"){
-      document.getElementById("startTrevi").innerHTML = "Trevi Fountain: " + "Start: " + hourconvert(startTrevi) + " - End: " + hourconvert(endTrevi)
+      document.getElementById("startTrevi").innerHTML = "<b>Trevi Fountain:</b> " + "Start: " + hourconvert(startTrevi) + " - End: " + hourconvert(endTrevi)
     }
     if (startPane != "0"){
-      document.getElementById("startPane").innerHTML = "Pane e Salame: " + "Start: " + hourconvert(startPane) + " - End: " + hourconvert(endPane)
+      document.getElementById("startPane").innerHTML = "<b>Pane e Salame: " + "Start:</b> " + hourconvert(startPane) + " - End: " + hourconvert(endPane)
     }
     if (startProsciutteria != "0"){
-      document.getElementById("startProsciutteria").innerHTML = "Prosciutteria Cantina Dei Papi: " + "Start: " + hourconvert(startProsciutteria) + " - End: " + hourconvert(endProsciutteria) 
+      document.getElementById("startProsciutteria").innerHTML = "<b>Prosciutteria Cantina Dei Papi:</b> " + "Start: " + hourconvert(startProsciutteria) + " - End: " + hourconvert(endProsciutteria) 
     }
     if (startIl != "0"){
-      document.getElementById("startIl").innerHTML = "Il Tamburello di Pulcinella: " + "Start: " + hourconvert(startIl) + " - End: " + hourconvert(endIl)
+      document.getElementById("startIl").innerHTML = "<b>Il Tamburello di Pulcinella:</b> " + "Start: " + hourconvert(startIl) + " - End: " + hourconvert(endIl)
     }
     if (startLa != "0"){
-      document.getElementById("startLa").innerHTML = "La Pergola: " + "Start: " + hourconvert(startLa) + " - End: " + hourconvert(endLa)
+      document.getElementById("startLa").innerHTML = "<b>La Pergola:</b> " + "Start: " + hourconvert(startLa) + " - End: " + hourconvert(endLa)
     }
     if (startFederica != "0"){
-      document.getElementById("startFederica").innerHTML = "Federica & Barbara of BB Kitchen: " + "Start: " + hourconvert(startFederica) + " - End: " + hourconvert(endFederica)
+      document.getElementById("startFederica").innerHTML = "<b>Federica & Barbara of BB Kitchen:</b> " + "Start: " + hourconvert(startFederica) + " - End: " + hourconvert(endFederica)
     }
     if (startPaciotti != "0"){
-      document.getElementById("startPaciotti").innerHTML = "Paciotti Salumeria: " + "Start: " + hourconvert(startPaciotti) + " - End: " + hourconvert(endPaciotti)
+      document.getElementById("startPaciotti").innerHTML = "<b>Paciotti Salumeria:</b> " + "Start: " + hourconvert(startPaciotti) + " - End: " + hourconvert(endPaciotti)
     }
     if (startCastel != "0"){
-      document.getElementById("startCastel").innerHTML = "Castel Romano Designer Outlet: " + "Start: " + hourconvert(startCastel) + " - End: " + hourconvert(endCastel)
+      document.getElementById("startCastel").innerHTML = "<b>Castel Romano Designer Outlet:</b> " + "Start: " + hourconvert(startCastel) + " - End: " + hourconvert(endCastel)
     }
     if (startMercato != "0"){
-      document.getElementById("startMercato").innerHTML = "Mercato Trionfale: " + "Start: " + hourconvert(startMercato) + " - End: " + hourconvert(endMercato)
+      document.getElementById("startMercato").innerHTML = "<b>Mercato Trionfale:</b> " + "Start: " + hourconvert(startMercato) + " - End: " + hourconvert(endMercato)
     }
 
   }
