@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/Bootstrap" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <style>
+    .addbut {
+    background-color: #4CAF50;
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  </style>
 </head>
 <body onload="test()">
 
 <div class="navbar">
   <a href="chooseplace">Home</a>
-  <a href="schedule">Schedule</a>
+   <div class="dropdown">
+    <button class="dropbtn">Schedule 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tokyoschedule">Tokyo</a>
+      <a href="newyorkschedule">New York City</a>
+      <a href="romeschedule">Rome</a>
+    </div>
+  </div> 
+
+  <!-- <a href="schedule">Schedule</a> -->
   <div class="dropdown">
     <button class="dropbtn">More 
       <i class="fa fa-caret-down"></i>
@@ -25,12 +50,21 @@
       <a href="rome">Rome</a>
       <a href="login">Log In</a>
       <a href="login">Sign Out</a>
+      <a href="help">Help?</a>
     </div>
   </div> 
 </div>
 
-<div class="edit">
+<!-- <div class="edit">
 <button type="button">Edit</button>
+</div> -->
+
+<br>
+<div>
+   <font size="+2">Schedule for Tokyo</font>
+</div>
+<div class = "addbut">
+  <a href="tokyoplace" class= "botton">Add Tokyo Event</a>
 </div>
 <!-- {{#each schedule}} -->
 <!-- <div class = "store name" id="{{store}}"> -->
@@ -39,34 +73,34 @@
 <!-- To clear make a function onclick(){innerHTML = ""} something like that-->
 
 <!-- id for Tokyo Activities -->
-<p id="startEbisuya"></p>
-<p id="endEbisuya"></p>
-<p id="starttokyotour"></p>
-<p id="endtokyotour"></p>
-<p id="startShinjuku"></p>
-<p id="endShinjuku"></p>
-<p id="startFuji"></p>
-<p id="endFuji"></p>
-<p id="startRyogoku"></p>
-<p id="endRyogoku"></p>
+<p style="background-color:Tomato;" id="startEbisuya"></p>
+<p style="background-color:Tomato;" id="endEbisuya"></p>
+<p style="background-color:Tomato;" id="starttokyotour"></p>
+<p style="background-color:Tomato;" id="endtokyotour"></p>
+<p style="background-color:Tomato;" id="startShinjuku"></p>
+<p style="background-color:Tomato;" id="endShinjuku"></p>
+<p style="background-color:Tomato;" id="startFuji"></p>
+<p style="background-color:Tomato;" id="endFuji"></p>
+<p style="background-color:Tomato;" id="startRyogoku"></p>
+<p style="background-color:Tomato;" id="endRyogoku"></p>
 <!-- Tokyo Food -->
-<p id="startIchiran"></p>
-<p id="endIchiran"></p>
-<p id="startNabezo"></p>
-<p id="endNabezo"></p>
-<p id="startDaiwa"></p>
-<p id="endDaiwa"></p>
-<p id="startIse"></p>
-<p id="endIse"></p>
-<p id="startHan"></p>
-<p id="endHan"></p>
+<p style="background-color:GreenYellow;" id="startIchiran"></p>
+<p style="background-color:GreenYellow;" id="endIchiran"></p>
+<p style="background-color:GreenYellow;" id="startNabezo"></p>
+<p style="background-color:GreenYellow;" id="endNabezo"></p>
+<p style="background-color:GreenYellow;" id="startDaiwa"></p>
+<p style="background-color:GreenYellow;" id="endDaiwa"></p>
+<p style="background-color:GreenYellow;" id="startIse"></p>
+<p style="background-color:GreenYellow;" id="endIse"></p>
+<p style="background-color:GreenYellow;" id="startHan"></p>
+<p style="background-color:GreenYellow;" id="endHan"></p>
 <!-- Tokyo Shopping -->
-<p id="startIsetan"></p>
-<p id="endIsetan"></p>
-<p id="startDiver"></p>
-<p id="endDiver"></p>
-<p id="startShin"></p>
-<p id="endShin"></p>
+<p style="background-color:Gold;" id="startIsetan"></p>
+<p style="background-color:Gold;" id="endIsetan"></p>
+<p style="background-color:Gold;" id="startDiver"></p>
+<p style="background-color:Gold;" id="endDiver"></p>
+<p style="background-color:Gold;" id="startShin"></p>
+<p style="background-color:Gold;" id="endShin"></p>
 
 <script type="text/javascript">
   // variables for Tokyo Activities
@@ -98,50 +132,47 @@
   var endDiver = {{endDiver}};
   var startShin = {{Shin}};
   var endShin = {{endShin}};
-
   function test() {
     if (startEbisuya != "0"){
-      document.getElementById("startEbisuya").innerHTML = "Ebisuya Asakusa: " + "Start: " + hourconvert(startEbisuya) + " End: " + hourconvert(endEbisuya)
+      document.getElementById("startEbisuya").innerHTML = "<b>Ebisuya Asakusa:</b> " + "Start: " + hourconvert(startEbisuya) + " End: " + hourconvert(endEbisuya)
     }
     if (starttokyotour != "0"){
-      document.getElementById("starttokyotour").innerHTML = "Tokyo FoodDrink Tour: " + "Start: " + hourconvert(starttokyotour) + " End: " + hourconvert(endtokyotour)
+      document.getElementById("starttokyotour").innerHTML = "<b>Tokyo FoodDrink Tour:</b> " + "Start: " + hourconvert(starttokyotour) + " End: " + hourconvert(endtokyotour)
     }
     if (startShinjuku != "0"){
-      document.getElementById("startShinjuku").innerHTML = "Shinjuku Gyoen National Garden: " + "Start: " + hourconvert(startShinjuku) + " End: " + hourconvert(endShinjuku)
+      document.getElementById("startShinjuku").innerHTML = "<b>Shinjuku Gyoen National Garden:</b> " + "Start: " + hourconvert(startShinjuku) + " End: " + hourconvert(endShinjuku)
     }
     if (startFuji != "0"){
-      document.getElementById("startFuji").innerHTML = "Mt. Fuji: " + "Start: " + hourconvert(startFuji) + " End: " + hourconvert(endFuji)
+      document.getElementById("startFuji").innerHTML = "<b>Mt. Fuji: " + "Start:</b> " + hourconvert(startFuji) + " End: " + hourconvert(endFuji)
     }
     if (startRyogoku != "0"){
-      document.getElementById("startRyogoku").innerHTML = "Ryogoku Kokugikan (Sumo): " + "Start: " + hourconvert(startRyogoku) + " - End: " + hourconvert(endRyogoku)
+      document.getElementById("startRyogoku").innerHTML = "<b>Ryogoku Kokugikan (Sumo):</b> " + "Start: " + hourconvert(startRyogoku) + " - End: " + hourconvert(endRyogoku)
     }
     if (startIchiran != "0"){
-      document.getElementById("startIchiran").innerHTML = "Ichiran Shibuya (Ramen): " + "Start: " + hourconvert(startIchiran) + " - End: " + hourconvert(endIchiran)
+      document.getElementById("startIchiran").innerHTML = "<b>Ichiran Shibuya (Ramen):</b> " + "Start: " + hourconvert(startIchiran) + " - End: " + hourconvert(endIchiran)
     }
     if (startNabezo != "0"){
-      document.getElementById("startNabezo").innerHTML = "Nabezo Shinjuku East Entrance (BBQ): " + "Start: " + hourconvert(startNabezo) + " - End: " + hourconvert(endNabezo )
+      document.getElementById("startNabezo").innerHTML = "<b>Nabezo Shinjuku East Entrance (BBQ):</b> " + "Start: " + hourconvert(startNabezo) + " - End: " + hourconvert(endNabezo )
     }
     if (startDaiwa != "0"){
-      document.getElementById("startDaiwa").innerHTML = "Daiwa Sushi: " + "Start: " + hourconvert(startDaiwa) + " - End: " + hourconvert(endDaiwa)
+      document.getElementById("startDaiwa").innerHTML = "<b>Daiwa Sushi: " + "Start:</b> " + hourconvert(startDaiwa) + " - End: " + hourconvert(endDaiwa)
     }
     if (startIse != "0"){
-      document.getElementById("startIse").innerHTML = "Ise Sueyoshi: " + "Start: " + hourconvert(startIse) + " - End: " + hourconvert(endIse)
+      document.getElementById("startIse").innerHTML = "<b>Ise Sueyoshi: " + "Start:</b> " + hourconvert(startIse) + " - End: " + hourconvert(endIse)
     }
     if (startHan != "0"){
-      document.getElementById("startHan").innerHTML = "Han no Daidokoro Kadochika: " + "Start: " + hourconvert(startHan) + " - End: " + hourconvert(endHan)
+      document.getElementById("startHan").innerHTML = "<b>Han no Daidokoro Kadochika:</b> " + "Start: " + hourconvert(startHan) + " - End: " + hourconvert(endHan)
     }
     if (startIsetan != "0"){
-      document.getElementById("startIsetan").innerHTML = "Isetan Shinjuku Store: " + "Start: " + hourconvert(startIsetan) + " - End: " + hourconvert(endIsetan)
+      document.getElementById("startIsetan").innerHTML = "<b>Isetan Shinjuku Store:</b> " + "Start: " + hourconvert(startIsetan) + " - End: " + hourconvert(endIsetan)
     }
     if (startDiver != "0"){
-      document.getElementById("startDiver").innerHTML = "Diver City Tokyo Plaza: " + "Start: " + hourconvert(startDiver) + " - End: " + hourconvert(endDiver)
+      document.getElementById("startDiver").innerHTML = "<b>Diver City Tokyo Plaza:</b> " + "Start: " + hourconvert(startDiver) + " - End: " + hourconvert(endDiver)
     }
     if (startShin != "0"){
-      document.getElementById("startShin").innerHTML = "Shin Nakamise Shopping Street: " + "Start: " + hourconvert(startShin) + " - End: " + hourconvert(endShin)
+      document.getElementById("startShin").innerHTML = "<b>Shin Nakamise Shopping Street:</b> " + "Start: " + hourconvert(startShin) + " - End: " + hourconvert(endShin)
     }
-
   }
-
 function hourconvert(hour){
   if (parseInt(hour) > 12) {
     var newtime = parseInt(hour) - 12;

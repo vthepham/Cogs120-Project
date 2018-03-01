@@ -39,34 +39,34 @@
 <!-- To clear make a function onclick(){innerHTML = ""} something like that-->
 
 <!-- id for New York Activities -->
-<p id="startCentral"></p>
-<p id="endCentral"></p>
-<p id="startStatue"></p>
-<p id="endStatue"></p>
-<p id="startTop"></p>
-<p id="endTop"></p>
-<p id="startThe"></p>
-<p id="endThe"></p>
-<p id="startTimes"></p>
-<p id="endTimes"></p>
+<p style="background-color:DeepPink;" id="startCentral"></p>
+<p style="background-color:DeepPink;" id="endCentral"></p>
+<p style="background-color:DeepPink;" id="startStatue"></p>
+<p style="background-color:DeepPink;" id="endStatue"></p>
+<p style="background-color:DeepPink;" id="startTop"></p>
+<p style="background-color:DeepPink;" id="endTop"></p>
+<p style="background-color:DeepPink;" id="startThe"></p>
+<p style="background-color:DeepPink;" id="endThe"></p>
+<p style="background-color:DeepPink;" id="startTimes"></p>
+<p style="background-color:DeepPink;" id="endTimes"></p>
 <!-- New York Food -->
-<p id="startFive"></p>
-<p id="endFive"></p>
-<p id="startJuliana"></p>
-<p id="endJuliana"></p>
-<p id="startBleecker"></p>
-<p id="endBleecker"></p>
-<p id="startAmélie"></p>
-<p id="endAmélie"></p>
-<p id="startKeens"></p>
-<p id="endKeens"></p>
+<p style="background-color:GreenYellow;" id="startFive"></p>
+<p style="background-color:GreenYellow;" id="endFive"></p>
+<p style="background-color:GreenYellow;" id="startJuliana"></p>
+<p style="background-color:GreenYellow;" id="endJuliana"></p>
+<p style="background-color:GreenYellow;" id="startBleecker"></p>
+<p style="background-color:GreenYellow;" id="endBleecker"></p>
+<p style="background-color:GreenYellow;" id="startAmélie"></p>
+<p style="background-color:GreenYellow;" id="endAmélie"></p>
+<p style="background-color:GreenYellow;" id="startKeens"></p>
+<p style="background-color:GreenYellow;" id="endKeens"></p>
 <!-- New York Shopping -->
-<p id="startBergdorf"></p>
-<p id="endBergdorf"></p>
-<p id="startGrand"></p>
-<p id="endGrand"></p>
-<p id="startFifth"></p>
-<p id="endFifth"></p>
+<p style="background-color:Gold;" id="startBergdorf"></p>
+<p style="background-color:Gold;" id="endBergdorf"></p>
+<p style="background-color:Gold;" id="startGrand"></p>
+<p style="background-color:Gold;" id="endGrand"></p>
+<p style="background-color:Gold;" id="startFifth"></p>
+<p style="background-color:Gold;" id="endFifth"></p>
 
 <script type="text/javascript">
   // variables for New York Activities
@@ -101,7 +101,7 @@
 
   function test() {
     if (startCentral != "0"){
-      document.getElementById("startCentral").innerHTML = "Central Park: " + "Start: " + hourconvert(startCentral) + " - End: " + hourconvert(endCentral)
+      document.getElementById("startCentral").innerHTML = "<b>Central Park</b>: " + "Start: " + hourconvert(startCentral) + " - End: " + hourconvert(endCentral)
     }
     if (startStatue != "0"){
       document.getElementById("startStatue").innerHTML = "Statue of Liberty: " + "Start: " + hourconvert(startStatue) + " - End: " + hourconvert(endStatue)

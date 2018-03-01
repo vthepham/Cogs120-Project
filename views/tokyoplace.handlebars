@@ -9,12 +9,99 @@
     <link href="/css/Bootstrap" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+
+    <style>
+    legend { 
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 50%;
+    border: none;
+    background-image: url("https://st2.depositphotos.com/3266441/8886/v/450/depositphotos_88867340-stock-illustration-red-sun-with-ray-on.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    text-shadow: 3px 2px yellow;
+}
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 20%;
+  background-color: #f1f1f1;
+}
+
+.header h3 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: blue;
+  width: 0%;
+}
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
 </head>
 <body>
 
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 <div class="navbar">
   <a href="chooseplace">Home</a>
-  <a href="schedule">Schedule</a>
+  <div class="dropdown">
+    <button class="dropbtn">Schedule 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tokyoschedule">Tokyo</a>
+      <a href="newyorkschedule">New York City</a>
+      <a href="romeschedule">Rome</a>
+    </div>
+  </div> 
+<!--   <a href="schedule">Schedule</a> -->
   <div class="dropdown">
     <button class="dropbtn">More 
       <i class="fa fa-caret-down"></i>
@@ -26,35 +113,28 @@
       <a href="rome">Rome</a>
       <a href="login">Log In</a>
       <a href="login">Sign Out</a>
+      <a href="help">Help?</a>
     </div>
   </div> 
 </div>
 
+
+<br>
 <form action="/tokyoschedule" method="get">
 {{#each japanactivities}}
+<fieldset>
+	<hr>
+	<legend><h3>Japan:</h3></legend>
       	<div class="japanactivities" id="{{jpname}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
           		<img src="{{jppic}}" class "img-responsive" style="width: 100%">
-          		<p>{{jpname}}</p>
+          		<p><b>{{jpname}}</b></p>
           		<p>Description: {{jpdes}}</p>
           		<p>Average Hours Spent: {{jphours}}</p>
           		<p>Average Price: {{jpprices}}</p>
       	</div>
     		<div>
-				Start:<select id = {{jpname}} name= {{jpname}} value=null>
-					<!-- <option value="0" selected>0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value='5'>5</option>
-					<option value='6'>6</option>
-					<option value='7'>7</option>
-					<option value='8'>8</option>
-					<option value='9'>9</option>
-					<option value='10'>10</option>
-					<option value='11'>11</option>
-					<option value='12'>12</option> -->
+				<i>Start:</i><select id = {{jpname}} name= {{jpname}} value=null>
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -76,7 +156,7 @@
 					<option value='23'>11 PM</option>
 					<option value='24'>12 AM</option>
 				</select>
-				End: <select id = end{{jpname}} name= end{{jpname}} value="0">
+				<i>End:</i> <select id = end{{jpname}} name= end{{jpname}} value="0">
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -99,31 +179,23 @@
 					<option value='24'>12 AM</option>
 				</select>
 		</div>
+	</fieldset>
+	<hr>
 {{/each}}
 
 {{#each japanfood}}
+<fieldset>
+	<hr>
+	<legend><h3>Japan:</h3></legend>
 	<div class="japanfood" id="{{jpstore}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
           		<img src="{{jpimage}}" class "img-responsive" style="width: 100%">
-          		<p>{{jpstore}}</p>
+          		<p><b>{{jpstore}}</b></p>
           		<p>Known For: {{jpknown}}</p>
           		<p>Average Price: {{jpfoodprice}}</p>
       	</div>
     		<div>
-				Start:<select id = {{jpstore}} name= {{jpstore}} value=null>
-					<!-- <option value="0" selected>0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value='5'>5</option>
-					<option value='6'>6</option>
-					<option value='7'>7</option>
-					<option value='8'>8</option>
-					<option value='9'>9</option>
-					<option value='10'>10</option>
-					<option value='11'>11</option>
-					<option value='12'>12</option> -->
+				<i>Start:</i><select id = {{jpstore}} name= {{jpstore}} value=null>
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -145,7 +217,7 @@
 					<option value='23'>11 PM</option>
 					<option value='24'>12 AM</option>
 				</select>
-				End: <select id = end{{jpstore}} name= end{{jpstore}} value="0">
+				<i>End:</i> <select id = end{{jpstore}} name= end{{jpstore}} value="0">
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -168,30 +240,22 @@
 					<option value='24'>12 AM</option>
 				</select>
 		</div>
+		</fieldset>
+	<hr>
 {{/each}}
 
 {{#each japanshopping}}
+<fieldset>
+	<hr>
+	<legend><h3>Japan:</h3></legend>
 	<div class="japanshopping" id="{{jpshopping}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
           		<img src="{{jpshopimage}}" class "img-responsive" style="width: 100%">
-          		<p>{{jpshopping}}</p>
+          		<p><b>{{jpshopping}}</b></p>
           		<p>Type: {{jpshopdes}}</p>
       	</div>
     		<div>
-				Start:<select id = {{jpshopping}} name= {{jpshopping}} value=null>
-					<!-- <option value="0" selected>0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value='5'>5</option>
-					<option value='6'>6</option>
-					<option value='7'>7</option>
-					<option value='8'>8</option>
-					<option value='9'>9</option>
-					<option value='10'>10</option>
-					<option value='11'>11</option>
-					<option value='12'>12</option> -->
+				<i>Start:</i><select id = {{jpshopping}} name= {{jpshopping}} value=null>
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -213,7 +277,7 @@
 					<option value='23'>11 PM</option>
 					<option value='24'>12 AM</option>
 				</select>
-				End: <select id = end{{jpshopping}} name= end{{jpshopping}} value="0">
+				<i>End:</i> <select id = end{{jpshopping}} name= end{{jpshopping}} value="0">
 					<option value="0" selected>0</option>
 					<option value="6">6 AM</option>
 					<option value="7">7 AM</option>
@@ -236,27 +300,52 @@
 					<option value='24'>12 AM</option>
 				</select>
 		</div>
+		</fieldset>
+	<hr>
 {{/each}}
+<br><br><br><br><br><br>
 
-<div>
-	<input type="submit" name="" value="Complete">
+<!--Progress bar-->
+<div class="header">
+  <h3>  Hit Complete to add event to Schedule</h3>
+  <input type="submit" name="" value="Complete">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
 </div>
 <!-- <input type="submit" name="" value="Complete"> -->
 </form>
 
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {
+	myFunction();
+	scrollFunction();
+};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+//window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
-
-<!-- This shit loads stuff from json...follow this template
-		#each = for loop
-		activities = calling the section
-		 = callling a particular thing in a json
-		 {{#each activities}}
-      	<div class="activities" id="{{name}}">
-        	<a href="description" class="thumbnail">
-          		<img src="{{imageURL}}" class = "img-responsive">
-          		<p>{{name}}</p>
-        	</a>
-      	</div>
-    {{/each}}
--->
