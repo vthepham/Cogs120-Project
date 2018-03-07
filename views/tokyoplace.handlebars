@@ -3,12 +3,8 @@
 <head>
 	<title>T-T-T-Tokyo!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Bootstrap -->
-    <link href="/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/Bootstrap" rel="stylesheet">
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+
+	{{> header}}
 
     <style>
     legend { 
@@ -32,17 +28,14 @@
   height: 20%;
   background-color: #f1f1f1;
 }
-
 .header h3 {
   text-align: center;
 }
-
 .progress-container {
   width: 100%;
   height: 1px;
   background: #ccc;
 }
-
 .progress-bar {
   height: 8px;
   background: blue;
@@ -63,32 +56,89 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
 #myBtn {
   display: none;
   position: fixed;
   bottom: 150px;
   right: 30px;
+  width: 13%;
+  height: 7%;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: none;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
-}
 
+  background-image: url("https://png.icons8.com/ultraviolet/1600/chevron-up.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: 60%; 
+
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2s infinite;
+}
 #myBtn:hover {
   background-color: #555;
 }
+
+#myBtnTop {
+   display: block;
+  position: fixed;
+  top: 10px;
+  left: 175px;
+  width: 13%;
+  height: 7%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+  background-image: url("https://png.icons8.com/ultraviolet/1600/chevron-up.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: 60%; 
+
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+#myBtnTop:hover {
+  background-color: #555;
+}
+/*
+GOOGLE ANALYSTIVCC*/
 </style>
 
 </head>
 <body>
+	<!-- Put if and else statemnet here -->
+	{{#if viewAlt}}
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+	{{else}}
+	<button onclick="topFunction()" id="myBtnTop" title="Go to top"></button>
+	{{/if}}
 
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <div class="navbar">
   <a href="chooseplace">Home</a>
@@ -322,30 +372,34 @@ window.onscroll = function() {
 	myFunction();
 	scrollFunction();
 };
-
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-
 // When the user scrolls down 20px from the top of the document, show the button
 //window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
+    try{
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
+        document.getElementById("myBtnTop").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtnTop").style.display = "none";
     }
+     }
+     catch(err){
+     	console.log("I Expected Error This error for Goolge Analytic")
+     }    
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 </script>
+	<script src="/js/introHCI.js"></script>
 </body>
 </html>

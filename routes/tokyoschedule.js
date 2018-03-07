@@ -1,7 +1,7 @@
 /*
 Shows schedule
 */
-var data = require('../schedule.json');
+var data = require('../japandata.json');
 
 exports.view = function(req, res){
 
@@ -48,9 +48,12 @@ exports.view = function(req, res){
 		'endShin': req.query.endShin,
 	};
 
-	console.log(japandata)
-	// console.log(data1)
+	console.log(japandata);
+	console.log(data);
+
+	data.japan.push(japandata);
 	res.render('tokyoschedule', japandata)
+
 };
 
 //console.log(req.query.Tokyo)
