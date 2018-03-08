@@ -26,7 +26,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </script>
 
 
-
 	<title>T-T-T-Tokyo!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -160,9 +159,9 @@ GOOGLE ANALYSTIVCC*/
 <body>
 	<!-- Put if and else statemnet here -->
 	{{#if viewAlt}}
-	<button class="btn btn-default TopBtn" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+	<button class="TopBtn" onclick="topFunction()" id="myBtn"></button>
 	{{else}}
-	<button class="btn btn-default TopBtn" onclick="topFunction()" id="myBtnTop" title="Go to top"></button>
+	<button class="TopBtn" onclick="topFunction()" id="myBtnTop"></button>
 	{{/if}}
 
 
@@ -428,6 +427,10 @@ function topFunction() {
 </script>
 
 <!-- GOOOOOOOGLE ANALYTIC -->
+<!-- <script src="/js/introHCI.js"></script> -->
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <script src="/js/introHCI.js"></script>
 <!-- Google Analytics -->
 <!-- <script>
