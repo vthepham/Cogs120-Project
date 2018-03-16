@@ -16,7 +16,6 @@ var tokyoschedule = require('./routes/tokyoschedule');
 var newyorkschedule = require('./routes/newyorkschedule');
 var romeschedule = require('./routes/romeschedule');
 var chooseplace = require('./routes/chooseplace');
-var schedule = require('./routes/schedule');
 var login = require('./routes/login');
 var tokyoplace = require('./routes/tokyoplace');
 var newyork = require('./routes/newyork');
@@ -59,7 +58,6 @@ app.get('/tokyoplace', tokyoplace.view);
 app.get('/tokyoplace/viewAlt',tokyoplace.viewAlt)
 app.get('/newyork', newyork.view);
 app.get('/rome', rome.view);
-app.get('/schedule', schedule.view);
 app.get('/help', help.view);
 
 app.post('/index', index.view);

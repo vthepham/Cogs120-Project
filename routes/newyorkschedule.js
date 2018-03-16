@@ -1,4 +1,3 @@
-var data = require('../schedule.json');
 
 exports.view = function(req, res){
 
