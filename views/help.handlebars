@@ -2,38 +2,12 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/style.css" rel="stylesheet">
 	<title>I need help!</title>
-	{{> header}}
 </head>
 <body>
-<div class="navbar">
-  <a href="chooseplace">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Schedule 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="tokyoschedule">Tokyo</a>
-      <a href="newyorkschedule">New York City</a>
-      <a href="romeschedule">Rome</a>
-    </div>
-  </div> 
-<!--   <a href="schedule">Schedule</a> -->
-  <div class="dropdown">
-    <button class="dropbtn">More 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="chooseplace">Discover</a>
-      <a href="tokyoplace">Tokyo</a>
-      <a href="newyork">New York City</a>
-      <a href="rome">Rome</a>
-      <a href="login">Log In</a>
-      <a href="login">Sign Out</a>
-      <a href="help">Help?</a>
-    </div>
-  </div> 
-</div>
+<!-- NAVIGATION BAR -->
+{{> navbar}}
 <div>
 	 <font size="+2">Help</font>
 </div>
@@ -42,7 +16,7 @@
 	<p>1. Choose a place you want to go to.</p>
 	<p>2. View the activities available.</p>
 	<p>3. Select the timeperiod to perform the activties.</p>
-		<p>-Pick a starting time then pick a ending time.</p>
+		<p><b>-Pick a starting time then pick a ending time.</b></p>
 	<p>4. Click on the "Complete" button on the bottom of the activity page to submit your plan.</p>
 	<p>5. View Plan</p>
 	<p>6. Start a new plan? Click on discover or a new place to start a new plan.</p>

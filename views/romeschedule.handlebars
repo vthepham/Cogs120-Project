@@ -3,9 +3,11 @@
 <head>
     <title>Rome Schechule!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/style.css" rel="stylesheet">
 	<!-- Bootstrap -->
-   {{> header}}
+ 
     <style>
+      {{> header}}
     .addbut {
     background-color: #4CAF50;
     border: none; /* Remove borders */
@@ -18,38 +20,16 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+.legend {
+    position: absolute;
+    bottom: 0;
+  }
   </style>
 </head>
 <body onload="test()">
 
-<div class="navbar">
-  <a href="chooseplace">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Schedule 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="tokyoschedule">Tokyo</a>
-      <a href="newyorkschedule">New York City</a>
-      <a href="romeschedule">Rome</a>
-    </div>
-  </div> 
-<!--   <a href="schedule">Schedule</a> -->
-  <div class="dropdown">
-    <button class="dropbtn">More 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="chooseplace">Discover</a>
-      <a href="tokyoplace">Tokyo</a>
-      <a href="newyork">New York City</a>
-      <a href="rome">Rome</a>
-      <a href="login">Log In</a>
-      <a href="login">Sign Out</a>
-      <a href="help">Help?</a>
-    </div>
-  </div> 
-</div>
+<!-- NAVIGATION BAR -->
+{{> navbar}}
 
 <!-- <div class="edit">
 <button type="button">Edit</button>
@@ -61,6 +41,9 @@
 <div class = "addbut">
   <a href="rome" class= "botton">Add Rome Event</a>
 </div>
+
+<!-- LEGEND-->
+{{> legend}}
 <!-- {{#each schedule}} -->
 <!-- <div class = "store name" id="{{store}}"> -->
 <!-- </div> -->
@@ -145,7 +128,7 @@
       document.getElementById("startTrevi").innerHTML = "<b>Trevi Fountain:</b> " + "Start: " + hourconvert(startTrevi) + " - End: " + hourconvert(endTrevi)
     }
     if (startPane != "0"){
-      document.getElementById("startPane").innerHTML = "<b>Pane e Salame: " + "Start:</b> " + hourconvert(startPane) + " - End: " + hourconvert(endPane)
+      document.getElementById("startPane").innerHTML = "<b>Pane e Salame:</b> " + "Start: " + hourconvert(startPane) + " - End: " + hourconvert(endPane)
     }
     if (startProsciutteria != "0"){
       document.getElementById("startProsciutteria").innerHTML = "<b>Prosciutteria Cantina Dei Papi:</b> " + "Start: " + hourconvert(startProsciutteria) + " - End: " + hourconvert(endProsciutteria) 

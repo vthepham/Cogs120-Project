@@ -1,6 +1,7 @@
 {
 	"japanactivities": [
 		{
+			"catagories": "Scenery",
 			"jpname": "Ebisuya Asakusa",
 			"jpdes": "Get a feel for Tokyo while you are on this fun rickshaw tour of Asakusa! See temples and buildings that retain the feel of ancient Edo as you ride in style!",
 			"jphours": "Tours offer: 30 minutes, 1-hour, 2-hour, 3-hour",
@@ -8,6 +9,7 @@
 			"jppic": "https://d18gmz9e98r8v5.cloudfront.net/ptr/20150604041707_1844209343_11463_9.jpg"	
 		},
 		{
+			"catagories": "Scenery",
 			"jpname": "Tokyo FooDrink Tour - Japan Wonder Travel",
 			"jpdes": "Come and have a taste of Tokyo! Visit some of the most famous markets in Japan and try out some of the best authentic food Japan has to offer!",
 			"jphours":"Fish market: 3-4 hours, Sunamachi Ginza: 3-4 hours, Tsukiji and Asakusa: 5-6 hours",
@@ -15,6 +17,7 @@
 			"jppic": "https://s3-ap-northeast-1.amazonaws.com/japan-wonder-travel-production/spree/images/8963/top/tsukiji_market.jpg?1500459203"			
 		},
 		{
+			"catagories": "Scenery",
 			"jpname": "Shinjuku Gyoen National Garden",
 			"jpdes": "Visit the national park and experience one of the best places to see cherry blossoms!",
 			"jphours": "Spend around 2-3 hours",
@@ -22,6 +25,7 @@
 			"jppic": "http://pixdaus.com/files/items/pics/0/42/157042_c4c260ff67b2cebc77134d6ddd8740f5_large.jpg"			
 		},
 		{
+			"catagories": "Scenery",
 			"jpname": "Mt Fuji, Lake Ashi and Bullet Train Day Trip from Tokyo",
 			"jpdes": "Visit the famous Mt Fugi on this full day tour!",
 			"jphours": "Full day 8+ hours",
@@ -29,6 +33,7 @@
 			"jppic": "http://antilogvacations.in/Images//ActivityDetail//Basic//International//Japan//Tokyo//Standard-Activities//Mt-Fuji-Lake-Ashi-and-Bullet-Train-Day-//Gallary//Mt-Fuji--Lake-Ashi-and-Bullet-Train-Day-Trip-from-_0.jpg"			
 		},
 		{
+			"catagories": "Scenery",
 			"jpname": "Ryogoku Kokugikan",
 			"jpdes": "View a sumo wrestling tournament.",
 			"jphours": "Sumo Wrestling Tournament: 3+ hours",
@@ -38,30 +43,35 @@
 	],
 	"japanfood":[
 		{
+			"catagories": "Food",
 			"jpstore": "Ichiran Shibuya",
 			"jpknown": "Ramen",
 			"jpfoodprice": "$10-$20",
 			"jpimage": "https://media-cdn.tripadvisor.com/media/photo-s/07/c0/f7/7b/ichiran-shibuya.jpg"
 		},
 		{
+			"catagories": "Food",
 			"jpstore": "Nabezo Shinjuku East Entrance",
 			"jpknown": "BBQ",
 			"jpfoodprice": "$20-$30",
 			"jpimage": "https://media-cdn.tripadvisor.com/media/photo-s/10/b8/78/91/photo5jpg.jpg"
 		},
 		{
+			"catagories": "Food",
 			"jpstore": "Daiwa Sushi",
 			"jpknown": "Sushi",
 			"jpfoodprice": "$20-$40",
 			"jpimage": "http://thisbeautifuldayblog.com/wp-content/uploads/2014/01/Sushi-Daiwa-1024x778.jpg"
 		},
 		{
+			"catagories": "Food",
 			"jpstore": "Ise Sueyoshi",
 			"jpknown": "Fine dinning seafood",
 			"jpfoodprice": "$50-$150",
 			"jpimage": "https://media-cdn.tripadvisor.com/media/photo-s/0e/eb/4a/50/photo0jpg.jpg"
 		},
 		{
+			"catagories": "Food",
 			"jpstore": "Han no Daidokoro Kadochika",
 			"jpknown": "Fine dinning meat",
 			"jpfoodprice": "$45-$60",
@@ -70,16 +80,19 @@
 	],
 	"japanshopping":[
 		{
+			"catagories": "Shopping",
 			"jpshopping":"Isetan Shinjuku Store",
 			"jpshopdes":"Department Store",
 			"jpshopimage": "https://farm4.staticflickr.com/3127/3106984701_ddeb1d1929_o.jpg"
 		},
 		{
+			"catagories": "Shopping",
 			"jpshopping":"Diver City Tokyo Plaza",
 			"jpshopdes":"Shopping Mall",
 			"jpshopimage": "http://gotourasia.info/wp-content/uploads/2016/05/6.jpg"
 		},
 		{
+			"catagories": "Shopping",
 			"jpshopping":"Shin Nakamise Shopping Street",
 			"jpshopdes":"Street Market",
 			"jpshopimage": "https://1.bp.blogspot.com/-DOABIoMbtw4/T04yIwzb9tI/AAAAAAAAAo8/6kugqpZeRRk/s1600/Shin-Nakamise+Shopping+Street.jpg"
@@ -87,6 +100,7 @@
 	],
 	"newyorkactivities":[
 		{
+			"catagories": "Scenery",
 			"nyname": "Central Park",
 			"nydes": "Relax and enjoy nature in the big City",
 			"nyhour": "2-3 hours",
@@ -94,6 +108,7 @@
 			"nypic": "http://images6.fanpop.com/image/photos/32500000/Central-Park-central-park-32583913-1024-768.jpg"
 		},
 		{
+			"catagories": "Scenery",
 			"nyname": "Statue of Liberty and Ellis Island Guided Tour",
 			"nydes": "Visit two famous sites that New York has to offer",
 			"nyhour": "4+ hours",
@@ -101,6 +116,7 @@
 			"nypic": "https://cdn.getyourguide.com/img/tour_img-740068-148.jpg"
 		},
 		{
+			"catagories": "Scenery",
 			"nyname": "Top of the Rock Observation Deck",
 			"nydes": "Get a full view of New York in one of the tallest buildings New York has to offer!",
 			"nyhour": "1-2 hours",
@@ -108,6 +124,7 @@
 			"nypic": "https://media.timeout.com/images/100432575/image.jpg"
 		},
 		{
+			"catagories": "Scenery",
 			"nyname": "The Metropolitan Museum of Art",
 			"nydes": "Visit some iconic and famous Art",
 			"nyhour": "3+ hours",
@@ -115,6 +132,7 @@
 			"nypic": "http://web.mta.info/mnr/gifs/themetmuseum.jpg"
 		},
 		{
+			"catagories": "Scenery",
 			"nyname": "Times Square",
 			"nydes": "Visit the famous Time Square and be in the heart of the city that never sleeps",
 			"nyhour": "3+ hours",
@@ -124,30 +142,35 @@
 	],
 	"newyorkfood":[
 		{
+			"catagories": "Food",
 			"nystore": "Five Napkin Burger",
 			"nyknown": "5 Napkin Burgers, Onion Rings, Beer",
 			"nyfoodprice": "$10-$15",
 			"nyimage": "http://5napkinburger.com/wp-content/uploads/2017/10/reseized-locations.jpg"
 		},
 		{
+			"catagories": "Food",
 			"nystore": "Juliana Pizza",
 			"nyknown": "Pizza, Spagetti",
 			"nyfoodprice": "$10-$20",
 			"nyimage": "https://media.tumblr.com/51bb41d3e4a8912eabb7c86586ab4f88/tumblr_inline_mhkbjhlo0v1qz4rgp.jpg"
 		},
 		{
+			"catagories": "Food",
 			"nystore": "Bleecker Street Pizza",
 			"nyknown": "Pizza",
 			"nyfoodprice": "Slice = $3 Whole = $20",
 			"nyimage": "http://www.cityroverwalks.com/wp-content/uploads/2016/04/Bleecker_Street_Pizza.jpg"
 		},
 		{
+			"catagories": "Food",
 			"nystore": "Amélie",
 			"nyknown": "French and wine Food",
 			"nyfoodprice": "$11-$30",
 			"nyimage": "http://barmagazine.co.uk/wp-content/uploads/2012/05/amelie-01.jpeg"
 		},
 		{
+			"catagories": "Food",
 			"nystore": "Keens Steakhouse",
 			"nyknown": "Steak, Seafood",
 			"nyfoodprice": "Lunch $30-$50, Dinner $50-$100",
@@ -156,16 +179,19 @@
 	],
 	"newyorkshopping":[
 		{
+			"catagories": "Shopping",
 			"nyshopping": "Bergdorf Goodman",
 			"nyshopdes": "Department Store",
 			"nyshopimage":"https://upload.wikimedia.org/wikipedia/commons/2/20/Bergdorf_Goodman.jpg"
 		},
 		{
+			"catagories": "Shopping",
 			"nyshopping": "Grand Central Market",
 			"nyshopdes": "Flea/Street Market",
 			"nyshopimage":"http://blogs.kcrw.com/whichwayla/wp-content/uploads/2013/05/DSC00081.jpg"
 		},
 		{
+			"catagories": "Shopping",
 			"nyshopping": "Fifth Avenue Steet",
 			"nyshopdes": "Street with stores along the street",
 			"nyshopimage":"https://fthmb.tqn.com/m8IEhgEEkex3Q5mCCTYKW0KQilA=/960x0/filters:no_upscale()/about/fifth_avenue_shopping_04-56a3fd163df78cf772803f90.jpg" 
@@ -173,6 +199,7 @@
 	],
 	"romeactivitives":[
 		{
+			"catagories": "Scenery",
 			"romename": "Colosseum",
 			"romedes": "Experience the wonder of the colosseum!",
 			"romehour": "3-4 hours",
@@ -180,6 +207,7 @@
 			"romepic": "http://www.telegraph.co.uk/content/dam/news/2016/05/10/62979978_Colosseum-xlarge.jpg"
 		},
 		{
+			"catagories": "Scenery",
 			"romename": "Pantheon",
 			"romedes": "Visit the beauty of the Pantheon.",
 			"romehour": "2-3 hours",
@@ -187,6 +215,7 @@
 			"romepic": "http://www.casablanca.tur.br/blog/wp-content/uploads/2012/09/Fotolia_40117340_Subscription_XL_1813x1200-1024x677.jpg"
 		},
 		{
+			"catagories": "Scenery",
 			"romename": "Vatican Museums, St Peter’s, Sistine Chapel",
 			"romedes": "Head to Vatican City and see the famous St. Peter's and Sistine Chapel",
 			"romehour": "3-4 hours",
@@ -194,6 +223,7 @@
 			"romepic": "http://paradiseintheworld.com/wp-content/uploads/2012/04/vatican-city-rome.jpg"
 		},
 		{
+			"catagories": "Scenery",
 			"romename": "Tivoli Day Trip from Rome: Hadrian's Villa and Villa d'Este",
 			"romedes": "A day trip tour of the former of the 2nd-century Emporer Hadrian",
 			"romehour": "7+ hours",
@@ -201,6 +231,7 @@
 			"romepic": "https://images.musement.com/default/0001/07/tivoli-day-trip-villa-d-este-hadrian-s-villa_header-6912.jpeg"
 		},
 		{
+			"catagories": "Scenery",
 			"romename": "Trevi Fountain",
 			"romedes": "Come see the beautiful Trevi Fountain",
 			"romehour": "1-2 hours",
@@ -210,30 +241,35 @@
 	],
 	"romefood":[
 		{
+			"catagories": "Food",
 			"romestore": "Pane e Salame",
 			"romeknown": "Italian street food: Sandwich",
 			"romefoodprice": "$5-$10",
 			"romeimage": "https://media-cdn.tripadvisor.com/media/photo-o/10/2d/5d/1a/pane-e-salame.jpg"
 		},
 		{
+			"catagories": "Food",
 			"romestore": "Prosciutteria Cantina Dei Papi",
 			"romeknown": "Prosciutteria",
 			"romefoodprice": "$10-20",
 			"romeimage": "https://media-cdn.tripadvisor.com/media/photo-s/0c/f4/c6/f6/la-prosciutteria-trastevere.jpg"
 		},
 		{
+			"catagories": "Food",
 			"romestore": "Il Tamburello di Pulcinella",
 			"romeknown": "Italian Sandwich",
 			"romefoodprice": "$5-$10",
 			"romeimage": "https://theblondeabroad.com/wp-content/uploads/2015/05/DSCF1675.jpg"
 		},
 		{
+			"catagories": "Food",
 			"romestore": "La Pergola",
 			"romeknown": "Fine Dinning: Italian, Mediterranean, European",
 			"romefoodprice": "$20-$30",
 			"romeimage": "https://4.bp.blogspot.com/-p9gHuIrZKdI/VhATrPBLs2I/AAAAAAAAO4U/JLp2bFSjiUQ/s1600/ad-hoc-rome-restaurant.JPG"
 		},
 		{
+			"catagories": "Food",
 			"romestore": "Federica & Barbara of BB Kitchen",
 			"romeknown": "Italian dinning at a local home.",
 			"romefoodprice": "$100 full course meal",
@@ -242,16 +278,19 @@
 	],
 	"romeshopping":[
 		{
+			"catagories": "Shopping",
 			"romeshopping":"Paciotti Salumeria",
 			"romeshopdes":"Specialty/Street Market",
 			"romeshopimage":"https://media-cdn.tripadvisor.com/media/photo-s/03/02/2b/25/paciotti-salumeria.jpg"
 		},
 		{
+			"catagories": "Shopping",
 			"romeshopping":"Castel Romano Designer Outlet",
 			"romeshopdes":"Shopping Mall",
 			"romeshopimage":"https://www.luxos.com/images/folkgallery/6919/Castel_Romano_Designer_Outlet_high.jpg"
 		},
 		{
+			"catagories": "Shopping",
 			"romeshopping":"Mercato Trionfale",
 			"romeshopdes":"Flea Market",
 			"romeshopimage":"https://media-cdn.tripadvisor.com/media/photo-s/04/2f/41/db/trionfale-market.jpg"

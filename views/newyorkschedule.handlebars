@@ -3,8 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
-   {{> header}}
+    <link href="/css/style.css" rel="stylesheet">
     <style>
+      {{> header}}
     .addbut {
     background-color: #4CAF50;
     border: none; /* Remove borders */
@@ -17,38 +18,15 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+.legend {
+    position: absolute;
+    bottom: 0;
 </style>
 </head>
 <body onload="test()">
 
-<div class="navbar">
-  <a href="chooseplace">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Schedule 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="tokyoschedule">Tokyo</a>
-      <a href="newyorkschedule">New York City</a>
-      <a href="romeschedule">Rome</a>
-    </div>
-  </div> 
-<!--   <a href="schedule">Schedule</a> -->
-  <div class="dropdown">
-    <button class="dropbtn">More 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="chooseplace">Discover</a>
-      <a href="tokyoplace">Tokyo</a>
-      <a href="newyork">New York City</a>
-      <a href="rome">Rome</a>
-      <a href="login">Log In</a>
-      <a href="login">Sign Out</a>
-      <a href="help">Help?</a>
-    </div>
-  </div> 
-</div>
+<!-- NAVIGATION BAR -->
+{{> navbar}}
 
 <!-- <div class="edit">
 <button type="button">Edit</button>
@@ -60,6 +38,9 @@
 <div class = "addbut">
   <a href="newyork" class= "botton">Add New York Event</a>
 </div>
+
+<!-- LEGEND-->
+{{> legend}}
 <!-- {{#each schedule}} -->
 <!-- <div class = "store name" id="{{store}}"> -->
 <!-- </div> -->

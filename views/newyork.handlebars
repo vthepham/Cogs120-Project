@@ -3,7 +3,7 @@
 <head>
 	<title>New York Baby!!!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{{> header}}
+  <link href="/css/style.css" rel="stylesheet">
 
     <style>
     legend { 
@@ -17,14 +17,14 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-blend-mode: screen;
-    text-shadow: 3px 2px red;
+    text-shadow: 3px 2px lightyellow;
 }
 .header {
   position: fixed;
   bottom: 0;
   z-index: 1;
-  width: 100%;
-  height: 20%;
+  width: 95%;
+  height: 15%;
   background-color: #f1f1f1;
 }
 
@@ -50,6 +50,7 @@
 }
 input[type=submit] {
     width: 100%;
+    height: 70%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -58,12 +59,17 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+input[value] {
+	font-size: 110%;
+	}
 
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 150px;
+  bottom: 110px;
   right: 30px;
+  width: 13%;
+  height: 7%;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -73,6 +79,13 @@ input[type=submit] {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  background-image: url("https://png.icons8.com/ultraviolet/1600/chevron-up.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: 60%; 
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2s infinite;
+    opacity: 0.5;
 }
 
 #myBtn:hover {
@@ -82,43 +95,17 @@ input[type=submit] {
 </head>
 <body>
 
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
 
-<div class="navbar">
-  <a href="chooseplace">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Schedule 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="tokyoschedule">Tokyo</a>
-      <a href="newyorkschedule">New York City</a>
-      <a href="romeschedule">Rome</a>
-    </div>
-  </div> 
-<!--   <a href="schedule">Schedule</a> -->
-  <div class="dropdown">
-    <button class="dropbtn">More 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="chooseplace">Discover</a>
-      <a href="tokyoplace">Tokyo</a>
-      <a href="newyork">New York City</a>
-      <a href="rome">Rome</a>
-      <a href="login">Log In</a>
-      <a href="login">Sign Out</a>
-      <a href="help">Help?</a>
-    </div>
-  </div> 
-</div>
+<!-- NAVIGATION BAR -->
+{{> navbar}}
 
 <br>
 <form action="/newyorkschedule" method="get">
 {{#each newyorkactivities}}
 <fieldset>
 	<hr>
-	<legend><h3>New York:</h3></legend>
+	<legend><h3>Scenery:</h3></legend>
       	<div class="newyorkactivities" id="{{nyname}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
           		<img src="{{nypic}}" class "img-responsive" style="width: 100%">
@@ -180,7 +167,7 @@ input[type=submit] {
 {{#each newyorkfood}}
 <fieldset>
 	<hr>
-	<legend><h3>New York:</h3></legend>
+	<legend><h3>Food:</h3></legend>
 	<div class="newyorkfood" id="{{nystore}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
           		<img src="{{nyimage}}" class "img-responsive" style="width: 100%">
@@ -241,7 +228,7 @@ input[type=submit] {
 {{#each newyorkshopping}}
 <fieldset>
 	<hr>
-	<legend><h3>New York:</h3></legend>
+	<legend><h3>Shopping:</h3></legend>
 	<div class="nyshopping" id="{{nyshopping}}">
           		<!-- <img src="{{imageURL}}" class = "img-responsive"> -->
           		<img src="{{nyshopimage}}" class "img-responsive" style="width: 100%">
@@ -301,8 +288,7 @@ input[type=submit] {
 
 <<!--Progress bar-->
 <div class="header">
-  <h3>  Hit Complete to add event to Schedule</h3>
-  <input type="submit" name="" value="Complete">
+  <input type="submit" name="" value="Add to Schedule">
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>  
@@ -341,19 +327,8 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 </script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/introHCI.js"></script>
 </body>
 </html>
-
-<!-- This shit loads stuff from json...follow this template
-		#each = for loop
-		activities = calling the section
-		 = callling a particular thing in a json
-		 {{#each activities}}
-      	<div class="activities" id="{{name}}">
-        	<a href="description" class="thumbnail">
-          		<img src="{{imageURL}}" class = "img-responsive">
-          		<p>{{name}}</p>
-        	</a>
-      	</div>
-    {{/each}}
--->
